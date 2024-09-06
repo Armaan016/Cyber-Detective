@@ -8,26 +8,39 @@ This project, RAG-Cyber-Detective, aims to develop a web-based Question Answerin
 
 ## Tech Stack:
 Frontend: React.js
+<br>
 Backend: Node.js, Express.js
+<br>
 Database: MongoDB
+<br>
 Containerization: Docker
+<br>
 Cloud Services: AWS
+<br>
 GenAI Integration: Large Language Model (LLM) and Retrieval-Augmented Generation (RAG)
 <br>
 
 ## Features:
 <br>
 Web-based QA platform for cybersecurity experts
+<br>
 Hybrid approach: KB + User-provided data for answering queries
+<br>
 Scalable, containerized deployment using Docker and AWS
+<br>
 
-
-## Day-wise Progress:
-Start Date: 5th September, 2024
-Day 1: 5th September, 2024
+## Progress:
+## Start Date: 6th September, 2024
+<br>
+Commit 1: 8th September, 2024
+<br>
 Tasks Completed:
-Set up project structure using the MERN stack.
-Created initial repository and Docker setup.
+<br>
+
+
+<br>
 Next Steps:
-Start working on MongoDB schema for the knowledge base.
-Plan out the integration of the QA model with RAG and LLM.
+<br>
+
+
+<br>
