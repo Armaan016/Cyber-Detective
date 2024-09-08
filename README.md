@@ -35,12 +35,7 @@ Scalable, containerized deployment using Docker and AWS
 Commit 1: 8th September, 2024
 <br>
 Tasks Completed:
-<br>
-
-
-<br>
-Next Steps:
-<br>
-
-
+1. Implemented login and registration pages for user authentication.
+2. Integrated email verification using the 'emailjs' module before completing registration.
+3. Configured MongoDB to store user data.
 <br>
