@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+.App {
+    font-family: "SUSE", sans-serif;
+    background-image: url("../src/Components/Images/blurry background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.auth-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 10px;
+    border: 3px solid white;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form h2 {
+    color: white;
+}
+
+.auth-form input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.auth-form p {
+    font-size: 15px;
+    color: white;
+    /* margin: 5px; */
+}
+
+.auth-form button {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.auth-form button:hover {
+    color: gray;
+    background-color: white;
+}
+
+.navigation-link {
+    color: white;
+    /* font-size: 20px; */
+    /* margin: 10px; */
+}
