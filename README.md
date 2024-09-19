@@ -39,3 +39,12 @@ Tasks Completed:
 2. Integrated email verification using the 'emailjs' module before completing registration.
 3. Configured MongoDB to store user data.
 <br>
+
+<br>
+Commit 2: 18th September, 2024
+<br>
+Tasks Completed:
+1. Successfully scraped content from kmit.in and saved the extracted text locally.
+2. Integrated RAG (Retrieval-Augmented Generation) to fetch relevant information in response to user queries.
+3. Incorporated FAISS as the vector database for efficient similarity search.
+<br>
