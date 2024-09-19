@@ -2,6 +2,8 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 
+const { spawn } = require('child_process');
+
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 const UserSchema = mongoose.Schema({
@@ -85,6 +87,27 @@ app.post("/register", async (req, res) => {
     }
 });
 
+app.post("/query", async (req, res) => {
+    const { query } = req.body;
+    console.log(query);
+
+    try {
+        const pythonProcess = spawn('python', ['./RAG.py', query]);
+        let output = '';
+
+        pythonProcess.stdout.on('data', (data) => {
+            output += data.toString();
+        });
+
+        pythonProcess.on('close', () => {
+            console.log(output.trim());
+            res.status(200).send(output);
+        });
+    } catch (error) {
+        console.error('Error during query:', error);
+        res.status(500).send("Internal server error");
+    }
+});
 
 app.get("/", (req, res) => {
     res.send("Backend is working");

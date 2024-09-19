@@ -2,6 +2,8 @@ import { React, useState, useRef } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import Axios from 'axios';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
     const [name, setName] = useState("");
@@ -21,7 +23,8 @@ const Register = () => {
 
     const sendEmailOTP = async () => {
         if (!email) {
-            alert("You cannot leave the email field empty!");
+            // alert("You cannot leave the email field empty!");
+            toast.error("You cannot leave the email field empty!");
             return;
         }
 
@@ -33,10 +36,12 @@ const Register = () => {
                 to_email: rec_email.current.value, otp: otp, to_name: name
             }, '1q-KhArbKwicHV8HG');
 
-            alert("OTP sent successfully!");
+            // alert("OTP sent successfully!");
+            toast.success("OTP sent successfully!");
             setIsOtpSent(true);
         } catch (error) {
-            alert("Failed to send email OTP. Please try again.");
+            // alert("Failed to send email OTP. Please try again.");
+            toast.error("Failed to send email OTP. Please try again.");
             console.log("Error: ", error);
         }
     };
@@ -99,6 +104,19 @@ const Register = () => {
 
     return (
         <div className="auth-form-container">
+            <ToastContainer position="top-center"
+                autoClose={2000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme='light'
+                toastStyle={{ fontSize: '16px' }}
+                bodyClassName="custom-toast-body"
+                progressBarStyle={{ background: 'white' }} />
             <form className="auth-form" onSubmit={isOtpVerified ? handleSubmit : sendEmailOTP}>
                 <h2>Register</h2>
                 <input
