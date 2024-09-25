@@ -105,7 +105,7 @@ const Register = () => {
     return (
         <div className="auth-form-container">
             <ToastContainer position="top-center"
-                autoClose={2000}
+                autoClose={1500}
                 hideProgressBar={false}
                 newestOnTop={false}
                 closeOnClick
@@ -132,7 +132,7 @@ const Register = () => {
                     ref={rec_email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
-                <p>(An OTP will be sent to your email for verification)</p>
+                <p style={{ fontSize: '16px', margin: '8px 0' }}>(An OTP will be sent to your email for verification)</p>
                 <input
                     type="text"
                     placeholder="Username"
@@ -149,7 +149,7 @@ const Register = () => {
                     <button type="button" onClick={sendEmailOTP}>Send OTP</button>
                 )}
                 <Link to='/' className="navigation-link">
-                    <h6>Already a user? Login</h6>
+                    <p>Already a user? Login</p>
                 </Link>
                 {isOtpSent && (
                     <>

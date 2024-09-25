@@ -1,6 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
+const puppeteer = require('puppeteer');
+const fs = require('fs');
 
 const { spawn } = require('child_process');
 
@@ -106,6 +108,56 @@ app.post("/query", async (req, res) => {
     } catch (error) {
         console.error('Error during query:', error);
         res.status(500).send("Internal server error");
+    }
+});
+
+const scrapeWebsite = async (url) => {
+    const browser = await puppeteer.launch({
+        headless: true,
+        defaultViewport: null,
+    });
+
+    try {
+        const page = await browser.newPage();
+        await page.goto(url, {
+            waitUntil: 'domcontentloaded',
+            timeout: 0,
+        });
+
+        const pageText = await page.evaluate(() => {
+            const unwantedSelectors = ['header', 'footer', 'nav', '.navbar', '.footer', '.contact', '.about', '.newsletter', 'form'];
+            unwantedSelectors.forEach(selector => {
+                const elements = document.querySelectorAll(selector);
+                elements.forEach(el => el.remove());
+            });
+            return document.body.innerText.trim();
+        });
+
+        // fs.appendFileSync('scraped_data.txt', `\n\n===== Scraped from: ${url} =====\n\n${pageText}`);
+
+        await page.close();
+        await browser.close();
+        return pageText;
+    } catch (error) {
+        console.error(`Error scraping ${url}:`, error);
+        await browser.close();
+        throw error;
+    }
+};
+
+app.post('/scrape', async (req, res) => {
+    const { url } = req.body;
+    console.log("Scraping website:", url);
+    if (!url) {
+        return res.status(400).json({ error: 'URL is required' });
+    }
+
+    try {
+        const scrapedText = await scrapeWebsite(url);
+        console.log("Scraping complete");
+        res.json({ text: scrapedText });
+    } catch (error) {
+        res.status(500).json({ error: 'Failed to scrape the website' });
     }
 });
 

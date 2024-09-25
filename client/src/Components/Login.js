@@ -52,7 +52,7 @@ const Login = () => {
     return (
         <div className='auth-form-container'>
             <ToastContainer position="top-center"
-                autoClose={2000}
+                autoClose={1300}
                 hideProgressBar={false}
                 newestOnTop={false}
                 closeOnClick
@@ -80,7 +80,7 @@ const Login = () => {
                 />
                 <button type="submit">Login</button>
                 <Link to='/register' className="navigation-link">
-                    <h6>Don't have an account? Register</h6>
+                    <p>Don't have an account? Register</p>
                 </Link>
             </form>
         </div>
