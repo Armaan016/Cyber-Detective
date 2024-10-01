@@ -4,9 +4,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Sidebar from './Sidebar';
 
-const ScrapePage = () => {
+const Tokens = () => {
     const [url, setUrl] = useState('');
-    const [scrapedText, setScrapedText] = useState('');
 
     const handleScrape = async (e) => {
         e.preventDefault();
@@ -15,15 +14,15 @@ const ScrapePage = () => {
             return;
         }
 
-        if (scrapedText) {
-            setScrapedText('');
-        }
         try {
-            toast.info('Scraping website...');
-            const response = await Axios.post('http://localhost:8080/scrape', { url });
-            setScrapedText(response.data.text);
+            toast.info('Annotating website...');
+            const response = await Axios.post('http://localhost:8080/tokens', { url });
+            if (response.status === 200) {
+                toast.success('Website scraped successfully and data saved in MongoDB!');
+                setUrl('');
+            }
         } catch (err) {
-            setScrapedText('');
+            toast.error('Failed to scrape website!');
         }
     };
 
@@ -43,8 +42,8 @@ const ScrapePage = () => {
                     toastStyle={{ fontSize: '16px' }}
                     bodyClassName="custom-toast-body"
                     progressBarStyle={{ background: 'white' }} />
-                <form className='auth-form' style={{ maxWidth: '500px' }}>
-                    <h2 style={{ fontSize: '30px' }}>Scrape any website</h2>
+                <form className='auth-form' style={{ maxWidth: '500px', marginTop: '200px' }}>
+                    <h2 style={{ fontSize: '29px' }}>Annotate Website and Store Tokens</h2>
                     <input
                         type="text"
                         placeholder="Enter URL"
@@ -52,20 +51,13 @@ const ScrapePage = () => {
                         onChange={(e) => setUrl(e.target.value)}
                         style={{ fontSize: '16px' }}
                     />
-                    <button onClick={handleScrape} style={{ fontSize: '16px' }}>Scrape Website</button>
+                    <button onClick={handleScrape} style={{ fontSize: '16px' }}>Annotate</button>
                 </form>
-                {scrapedText && (
-                    <div className='displayedText'>
-                        <div>
-                            <h3 style={{ textDecoration: 'underline' }}>Scraped Text:</h3>
-                            <pre>{scrapedText}</pre>
-                        </div>
-                    </div>
-                )}
             </div>
             <Sidebar />
         </>
+
     );
 };
 
-export default ScrapePage;
+export default Tokens;

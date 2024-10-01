@@ -132,7 +132,7 @@ const Register = () => {
                     ref={rec_email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
-                <p style={{ fontSize: '16px', margin: '8px 0' }}>(An OTP will be sent to your email for verification)</p>
+                <p style={{ fontSize: '16px', margin: '8px 0', color: 'tomato' }}>(An OTP will be sent to your email for verification)</p>
                 <input
                     type="text"
                     placeholder="Username"

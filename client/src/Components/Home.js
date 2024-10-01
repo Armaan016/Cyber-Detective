@@ -28,8 +28,11 @@ const Home = () => {
                                     <Link className="nav-link" to='/kmit' style={{ borderBottom: '1px solid tomato' }}>
                                         Ask KMIT Queries
                                     </Link>
-                                    <Link className="nav-link" to='/scrape'>
+                                    <Link className="nav-link" to='/scrape' style={{ borderBottom: '1px solid tomato' }}>
                                         Scrape any Website
+                                    </Link>
+                                    <Link className="nav-link" to='/tokens'>
+                                        Annotate Text from Website
                                     </Link>
                                 </li>
                             </ul>

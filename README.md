@@ -48,3 +48,13 @@ Tasks Completed:
 2. Integrated RAG (Retrieval-Augmented Generation) to fetch relevant information in response to user queries.
 3. Incorporated FAISS as the vector database for efficient similarity search.
 <br>
+
+<br>
+Commit 3: 1st October, 2024
+<br>
+Tasks Completed:
+1. Implemented scraping for website URLs provided by users.
+2. Processed the AttackER dataset to classify individual words.
+3. Tagged each word in the scraped text with its corresponding token based on the AttackER dataset and stored the results in MongoDB.
+<br>
+

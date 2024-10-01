@@ -1,11 +1,12 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
+const mongoose = require('mongoose');
 
 const websites = [
     // "https://bleepingcomputer.com",
     // "https://hexacorn.com",
     // "https://sentinelone.com",
-    
+    // "https://malwarebytes.com"
     // "https://crowdstrike.com",
     // "https://reuters.com",
     // "https://att.com",
@@ -19,11 +20,9 @@ const websites = [
     // "https://brighttalk.com",
     // "https://libevent.org",
     // "https://fortinet.com",
-    // "https://microsoft.com",
     // "https://washingtonpost.com",
     // "https://reversemode.com",
     // "https://viasat.com",
-    // "https://wikipedia.org",
     // "https://wired.com",
     // "https://cisa.gov",
     // "https://airforcemag.com",
@@ -56,54 +55,130 @@ const websites = [
     // "https://forbes.com"
 ];
 
-// Function to scrape and save text from a website
-(async () => {
-    // Launch the browser in headless mode (no visible window)
+// Load your dataset (train.json)
+const dataset = JSON.parse(fs.readFileSync('../train.json'));
+
+// Function to create a token-class map from the dataset
+const createTokenClassMap = (dataset) => {
+    const tokenClassMap = new Map();
+
+    dataset.forEach(entry => {
+        entry.tokens.forEach((token, index) => {
+            const word = token.toLowerCase();
+            const tag = entry.tags[index];
+
+            // Check if the word is already in the map
+            if (!tokenClassMap.has(word)) {
+                tokenClassMap.set(word, {});
+            }
+
+            // Get the current tag count map for the word
+            const tagCountMap = tokenClassMap.get(word);
+
+            // Initialize the tag count if it doesn't exist
+            if (!tagCountMap[tag]) {
+                tagCountMap[tag] = 0;
+            }
+
+            // Increment the tag count
+            tagCountMap[tag] += 1;
+        });
+    });
+
+    return tokenClassMap;
+};
+
+// Generate token-class map
+const tokenClassMap = createTokenClassMap(dataset);
+
+// Function to scrape and filter text from a website
+const scrapeWebsite = async (url) => {
     const browser = await puppeteer.launch({
-        headless: false, // Prevent opening a browser window
+        headless: true, // Run headless browser (no GUI)
         defaultViewport: null,
     });
 
-    for (let website of websites) {
-        try {
-            // Create a new page
-            const page = await browser.newPage();
+    try {
+        const page = await browser.newPage();
+        await page.goto(url, {
+            waitUntil: 'domcontentloaded',
+            timeout: 0,
+        });
 
-            // Navigate to the website
-            await page.goto(website, {
-                waitUntil: 'domcontentloaded', // Wait for the DOM to load
-                timeout: 0  // Disable timeout (helpful for slower websites)
+        const pageText = await page.evaluate(() => {
+            const unwantedSelectors = ['header', 'footer', 'nav', '.navbar', '.footer', '.contact', '.about', '.newsletter'];
+            unwantedSelectors.forEach(selector => {
+                const elements = document.querySelectorAll(selector);
+                elements.forEach(el => el.remove());
             });
+            return document.body.innerText.trim();
+        });
 
-            // Extract all visible text content from the website
-            const pageText = await page.evaluate(() => {
-                // Remove unnecessary sections by CSS selectors
-                const unwantedSelectors = ['header', 'footer', 'nav', '.navbar', '.footer', '.contact', '.about', '.newsletter'];
-                unwantedSelectors.forEach(selector => {
-                    const elements = document.querySelectorAll(selector);
-                    elements.forEach(el => el.remove());
-                });
+        await page.close();
+        await browser.close();
 
-                // Now extract the cleaned visible text
-                return document.body.innerText.trim();  // Extract all visible text from the body
-            });
+        return pageText;
 
-            // Log the scraped text (you can save this to a file as well)
-            console.log(`Scraped data from ${website}:\n`, pageText);
-
-            // Save the scraped text to a file
-            fs.appendFileSync('scraped_data.txt', `\n\n===== Scraped from: ${website} =====\n\n${pageText}`);
-
-            // Close the current page
-            await page.close();
-
-            console.log(`Scraped data from ${website}`);
-        } catch (error) {
-            console.error(`Error scraping ${website}: ${error}`);
-        }
+    } catch (error) {
+        console.error(`Error scraping ${url}:`, error);
+        await browser.close();
+        throw error;
     }
+};
 
-    // Close the browser
-    await browser.close();
-    console.log('Scraping completed.');
-})();
+// Function to extract and count relevant tokens, and select the tag with the highest occurrence
+const extractRelevantTokens = (text) => {
+    const words = text.split(/\s+/);  // Split by spaces to get individual words
+    const relevantTokens = {};
+
+    words.forEach(word => {
+        const cleanedWord = word.toLowerCase().replace(/[.,!?]/g, '');  // Clean punctuation and lowercase
+
+        // Check if the word is in the token-class map
+        if (tokenClassMap.has(cleanedWord)) {
+            const tagCountMap = tokenClassMap.get(cleanedWord);
+
+            // Find the tag with the highest count
+            let mostFrequentTag = null;
+            let maxCount = 0;
+
+            for (const [tag, count] of Object.entries(tagCountMap)) {
+                if (count > maxCount) {
+                    mostFrequentTag = tag;
+                    maxCount = count;
+                }
+            }
+
+            // If word exists in map, count it and associate with most frequent tag
+            if (!relevantTokens[cleanedWord]) {
+                relevantTokens[cleanedWord] = { count: 0, tag: mostFrequentTag };
+            }
+
+            relevantTokens[cleanedWord].count += 1; // Increment count for this word
+        }
+    });
+
+    return relevantTokens;
+};
+
+// Example function to scrape a website and filter relevant tokens
+const processWebsiteData = async (url) => {
+    try {
+        const scrapedText = await scrapeWebsite(url);
+        const relevantTokens = extractRelevantTokens(scrapedText);
+
+        console.log("Relevant Tokens:", relevantTokens);
+
+        mongoose.connect('mongodb://localhost:27017/CyberDetective')
+            .then(() => {
+                console.log("Connected to CyberDetective database");
+            }).catch((error) => {
+                console.error("Error connecting to database:", error);
+            });
+    } catch (error) {
+        console.error("Error processing website:", error);
+    }
+};
+
+// Call the function with a URL to process it
+processWebsiteData('https://sentinelone.com');
