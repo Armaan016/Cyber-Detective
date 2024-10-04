@@ -10,6 +10,7 @@ const Login = () => {
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
 
+    // const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8080';
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log(username, password);
@@ -21,7 +22,7 @@ const Login = () => {
         }
 
         try {
-            const response = await Axios.post("http://localhost:8080/login", {
+            const response = await Axios.post('http://localhost:8080/login', {
                 username,
                 password
             });
@@ -37,6 +38,7 @@ const Login = () => {
         } catch (error) {
             if (error.response && error.response.status === 400) {
                 // alert("Invalid credentials");
+                console.log(error.response.data);
                 toast.error("Invalid credentials");
                 console.log("Invalid credentials");
             } else {

@@ -6,6 +6,7 @@ import Sidebar from './Sidebar';
 
 const Tokens = () => {
     const [url, setUrl] = useState('');
+    const [tokens, setTokens] = useState([]); 
 
     const handleScrape = async (e) => {
         e.preventDefault();
@@ -20,9 +21,13 @@ const Tokens = () => {
             if (response.status === 200) {
                 toast.success('Website scraped successfully and data saved in MongoDB!');
                 setUrl('');
+                console.log(response.data);
+
+                setTokens(response.data);  
             }
         } catch (err) {
             toast.error('Failed to scrape website!');
+            console.error(err);
         }
     };
 
@@ -54,9 +59,33 @@ const Tokens = () => {
                     <button onClick={handleScrape} style={{ fontSize: '16px' }}>Annotate</button>
                 </form>
             </div>
+
+            {tokens.length > 0 && (
+                <div className='tokens-table' style={{ marginTop: '50px', padding: '0 50px' }}>
+                    <h3>Scraped Words and Tags</h3>
+                    <table border="1" cellPadding="10" s>
+                        <thead>
+                            <tr>
+                                <th>Word</th>
+                                <th>Count</th>
+                                <th>Tag</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {tokens.map((token, index) => (
+                                <tr key={index}>
+                                    <td>{token.word}</td>
+                                    <td>{token.count}</td>
+                                    <td>{token.tag}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+            )}
+
             <Sidebar />
         </>
-
     );
 };
 

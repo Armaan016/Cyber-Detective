@@ -82,7 +82,7 @@
 
 .navigation-link p {
     color: tomato;
-    text-decoration: underline ;
+    text-decoration: underline;
     /* font-size: 20px; */
     /* margin: 10px; */
 }
@@ -159,4 +159,48 @@
     border: 3px solid white;
     border-radius: 5px;
     max-width: 1400px;
+}
+
+.tokens-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 700px; */
+    margin-top: 50px;
+    padding: 0 50px;
+    font-family: Arial, sans-serif;
+}
+
+.tokens-table h3 {
+    text-align: center;
+    color: tomato;
+}
+
+.tokens-table table {
+    width: 60%;
+    border-collapse: collapse;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.tokens-table th,
+.tokens-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.tokens-table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.tokens-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+    color: black;
+}
+
+.tokens-table tr:hover {
+    background-color: #f1f1f1;
 }

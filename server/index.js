@@ -5,14 +5,15 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
+const { spawn } = require('child_process');
+const axios = require('axios');
 
-mongoose.connect('mongodb://0.0.0.0:27017/CyberDetective')
-    .then(() => {
-        console.log('Connected to CyberDetective database');
-    })
-    .catch((err) => {
-        console.error('Connection error:', err);
-    });
+app.use(cors());
+app.use(express.json());
+
+mongoose.connect('mongodb://host.docker.internal:27017/CyberDetective')
+    .then(() => console.log('Connected to MongoDB'))
+    .catch(err => console.error('Database connection error:', err));
 
 const UserSchema = mongoose.Schema({
     name: String,
@@ -28,7 +29,6 @@ const WebsiteDataSchema = new mongoose.Schema({
     scrapedText: String,
     tokens: [{
         word: String,
-        token: String,
         count: Number,
         tag: String
     }]
@@ -36,11 +36,12 @@ const WebsiteDataSchema = new mongoose.Schema({
 
 const WebsiteData = mongoose.model('tokens', WebsiteDataSchema);
 
-app.use(express.json());
-app.use(cors());
 
 const scrapeWebsite = async (url) => {
-    const browser = await puppeteer.launch({ headless: true });
+    const browser = await puppeteer.launch({
+        headless: true,
+        args: ['--no-sandbox', '--disable-setuid-sandbox']
+    });
     try {
         const page = await browser.newPage();
         await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 0 });
@@ -91,57 +92,28 @@ const createTokenClassMap = (dataset) => {
     return tokenClassMap;
 };
 
-const tokenClassMap = createTokenClassMap(dataset);
-
-const extractRelevantTokens = (text) => {
-    const words = text.split(/\s+/);
-    const relevantTokens = [];
-
-    words.forEach(word => {
-        const cleanedWord = word.toLowerCase().replace(/[.,!?]/g, '');
-
-        if (tokenClassMap.has(cleanedWord)) {
-            const tagCountMap = tokenClassMap.get(cleanedWord);
-
-            let mostFrequentTag = null;
-            let maxCount = 0;
-
-            for (const [tag, count] of Object.entries(tagCountMap)) {
-                if (count > maxCount) {
-                    mostFrequentTag = tag;
-                    maxCount = count;
-                }
-            }
-
-            relevantTokens.push({
-                word: cleanedWord,
-                count: 1,
-                tag: mostFrequentTag
-            });
-        }
-    });
-
-    return relevantTokens;
-};
-
 const processWebsiteData = async (url) => {
     try {
         const scrapedText = await scrapeWebsite(url);
-        const relevantTokens = extractRelevantTokens(scrapedText);
 
-        console.log('Relevant Tokens:', relevantTokens);
+        const response = await axios.post('http://python-service:5000/annotate', {
+            input_sentence: scrapedText
+        });
+
+        const wordData = response.data;
 
         const websiteData = new WebsiteData({
             url,
             scrapedText,
-            tokens: relevantTokens
+            tokens: wordData
         });
 
         await websiteData.save();
-        console.log('Website data saved to database');
 
+        return { scrapedText, wordData };
     } catch (error) {
         console.error('Error processing website:', error);
+        return { error: 'Failed to process website' };
     }
 };
 
@@ -153,9 +125,11 @@ app.post('/tokens', async (req, res) => {
     }
 
     try {
-        await processWebsiteData(url);
-        res.status(200).send('Website data processed and tokens saved');
+        const { scrapedText, wordData } = await processWebsiteData(url);
+
+        res.status(200).json(wordData);
     } catch (error) {
+        console.error('Error processing website:', error);
         res.status(500).json({ error: 'Failed to process website' });
     }
 });
@@ -178,13 +152,13 @@ app.post('/scrape', async (req, res) => {
 
 app.post("/login", async (req, res) => {
     const { username, password } = req.body;
-
+    console.log('Login request:', username, password);
     try {
         const user = await User.findOne({ username });
-        if (!user) return res.status(400).send("Invalid username");
+        if (!user) return res.status(401).send("Invalid username");
 
         const isPasswordValid = await bcrypt.compare(password, user.password);
-        if (!isPasswordValid) return res.status(400).send("Invalid password");
+        if (!isPasswordValid) return res.status(401).send("Invalid password");
 
         res.status(200).send("Login successful");
     } catch (error) {

@@ -1,0 +1,7 @@
+joblib
+sentence-transformers
+numpy>=1.16.5,<1.23.0
+scipy==1.7.3
+scikit-learn==1.5.0
+Flask
+flask-cors

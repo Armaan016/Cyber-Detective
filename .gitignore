@@ -1,5 +1,14 @@
 client/node_modules
+client/build/
+client/dist/
+
 server/node_modules
 server/venv
 
 /Other
+/data
+
+*.log
+docker-compose.override.yml
+
+.env
