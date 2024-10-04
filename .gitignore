@@ -9,7 +9,4 @@ server/word_vectors.csv
 /Other
 /data
 
-*.log
-docker-compose.override.yml
-
 .env
