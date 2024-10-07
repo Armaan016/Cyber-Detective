@@ -15,7 +15,9 @@ services:
     depends_on:
       - mongodb
       - python-service
- 
+    environment:
+      - MONGO_URI=mongodb://host.docker.internal:27017/CyberDetective
+      - PYTHON_URI=python-service:5000
 
   python-service:
     build: ./python-service

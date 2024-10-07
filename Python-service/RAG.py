@@ -191,18 +191,18 @@ def get_relevant_contexts(query, scraped_text, window_size=3):
     
     return top_contexts
 
-if __name__ == "__main__":
-    scraped_text = scrape_kmit()
-    scraped_text += scrape_kmit_aboutus()
-    scraped_text += scrape_kmit_management()
-    scraped_text += scrape_kmit_principal_academic_director()
-    scraped_text += scrape_kmit_placements()
-    # print(scraped_text)
+# if __name__ == "__main__":
+#     scraped_text = scrape_kmit()
+#     scraped_text += scrape_kmit_aboutus()
+#     scraped_text += scrape_kmit_management()
+#     scraped_text += scrape_kmit_principal_academic_director()
+#     scraped_text += scrape_kmit_placements()
+#     # print(scraped_text)
     
-    # query = "Who is the founder of KMIT?"
-    query = sys.argv[1] 
+#     # query = "Who is the founder of KMIT?"
+#     query = sys.argv[1] 
     
-    relevant_contexts = get_relevant_contexts(query, scraped_text)
-    for i, context in enumerate(relevant_contexts):
-        print(i + 1,":", context)
-        print()
+#     relevant_contexts = get_relevant_contexts(query, scraped_text)
+#     for i, context in enumerate(relevant_contexts):
+#         print(i + 1,":", context)
+#         print()

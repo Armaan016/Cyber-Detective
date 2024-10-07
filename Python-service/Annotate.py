@@ -4,20 +4,18 @@ import joblib
 from sentence_transformers import SentenceTransformer
 from collections import Counter
 from flask import Flask, request, jsonify
-from flask_cors import CORS  # Import CORS
+from flask_cors import CORS  
 
-# Suppress warnings
+from RAG import scrape_kmit, scrape_kmit_aboutus, scrape_kmit_management, scrape_kmit_principal_academic_director, scrape_kmit_placements, get_relevant_contexts
+
 with warnings.catch_warnings():
     warnings.simplefilter("ignore", FutureWarning)
     warnings.simplefilter("ignore", UserWarning)
 
-# Initialize Flask app
 app = Flask(__name__)
 
-# Enable CORS for all routes
 CORS(app)
 
-# Load the model and tag mappings
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 tag_mapping = {
@@ -52,22 +50,17 @@ def count_words(input_sentence):
 @app.route('/annotate', methods=['POST'])
 def annotate():
     try:
-        # Parse the JSON input
         data = request.get_json()
 
-        # Ensure input_sentence exists in the request body
         input_sentence = data.get('input_sentence', '').strip()
         
         if not input_sentence:
             return jsonify({"error": "No input text provided"}), 400
 
-        # First, count the words
         word_counts = count_words(input_sentence)
 
-        # Get predictions for each word
         predicted_tags = predict(input_sentence)
 
-        # Prepare the combined result (word, count, tag)
         combined_result = []
         for word, tag in predicted_tags:
             count = word_counts[word]
@@ -77,13 +70,29 @@ def annotate():
                 "tag": tag
             })
 
-        # Return the combined result as JSON
         return jsonify(combined_result)
 
     except Exception as e:
-        # Handle exceptions and return error message
+        return jsonify({"error": str(e)}), 500
+    
+@app.route('/query', methods=['POST'])
+def scrape():
+    try:
+        data = request.get_json()
+        query = data.get('query', '').strip()
+        
+        scraped_text = scrape_kmit()
+        scraped_text += scrape_kmit_aboutus()
+        scraped_text += scrape_kmit_management()
+        scraped_text += scrape_kmit_principal_academic_director()
+        scraped_text += scrape_kmit_placements()
+
+        relevant_contexts = get_relevant_contexts(query, scraped_text)
+
+        return jsonify(relevant_contexts)
+
+    except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-# Run the Flask app
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)

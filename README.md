@@ -58,10 +58,18 @@ Tasks Completed:
 3. Tagged each word in the scraped text with its corresponding token based on the AttackER dataset and stored the results in MongoDB.
 <br>
 
+<br>
 Commit 4: 4th October, 2024
 <br>
 Tasks Completed:
-1. Implemented annotation for text given by user through URL.
-2. Containerized the whole application using Docker. 
+1. Developed functionality to annotate user-provided text from a URL.
+2. Fully containerized the entire application using Docker for easier deployment and management.
+<br>
+
+<br>
+Commit 5: 8th October, 2024
+<br>
+Tasks Completed:
+1. Set up a Flask server to handle Python script execution for backend processing.
 <br>
 

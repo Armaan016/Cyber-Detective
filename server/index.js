@@ -7,11 +7,14 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const { spawn } = require('child_process');
 const axios = require('axios');
+require('dotenv').config();
 
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb://host.docker.internal:27017/CyberDetective')
+const mongoURI = process.env.MONGO_URI || 'mongodb://0.0.0.0:27017/CyberDetective';
+
+mongoose.connect(mongoURI)
     .then(() => console.log('Connected to MongoDB'))
     .catch(err => console.error('Database connection error:', err));
 
@@ -65,38 +68,11 @@ const scrapeWebsite = async (url) => {
     }
 };
 
-const dataset = JSON.parse(fs.readFileSync('./train.json'));
-
-const createTokenClassMap = (dataset) => {
-    const tokenClassMap = new Map();
-
-    dataset.forEach(entry => {
-        entry.tokens.forEach((token, index) => {
-            const word = token.toLowerCase();
-            const tag = entry.tags[index];
-
-            if (!tokenClassMap.has(word)) {
-                tokenClassMap.set(word, {});
-            }
-
-            const tagCountMap = tokenClassMap.get(word);
-
-            if (!tagCountMap[tag]) {
-                tagCountMap[tag] = 0;
-            }
-
-            tagCountMap[tag] += 1;
-        });
-    });
-
-    return tokenClassMap;
-};
-
 const processWebsiteData = async (url) => {
     try {
         const scrapedText = await scrapeWebsite(url);
 
-        const response = await axios.post('http://python-service:5000/annotate', {
+        const response = await axios.post(`http://${process.env.PYTHON_URI}/annotate`, {
             input_sentence: scrapedText
         });
 
@@ -147,6 +123,28 @@ app.post('/scrape', async (req, res) => {
         res.json({ text: scrapedText });
     } catch (error) {
         res.status(500).json({ error: 'Failed to scrape the website' });
+    }
+});
+
+app.post('/query', async (req, res) => {
+    const { query } = req.body;
+    console.log("Querying:", query);
+
+    if (!query) {
+        return res.status(400).json({ error: 'Query is required' });
+    }
+
+    try {
+        const response = await axios.post(`http://${process.env.PYTHON_URI}/query`, { query }); 
+
+        if (response.status === 200) {
+            res.json(response.data);
+        } else {
+            res.status(response.status).json({ error: response.data.error });
+        }
+    } catch (error) {
+        console.error('Error fetching from Python service:', error);
+        res.status(500).json({ error: 'Failed to fetch the answer from the Python service' });
     }
 });
 
