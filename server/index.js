@@ -12,17 +12,18 @@ require('dotenv').config();
 app.use(cors());
 app.use(express.json());
 
-const mongoURI = process.env.MONGO_URI || 'mongodb://0.0.0.0:27017/CyberDetective';
+const mongoURI = process.env.MONGO_URI;
 
+// console.log('Connecting to MongoDB:', mongoURI); 
 mongoose.connect(mongoURI)
     .then(() => console.log('Connected to MongoDB'))
     .catch(err => console.error('Database connection error:', err));
 
 const UserSchema = mongoose.Schema({
-    name: String,
-    email: String,
-    username: { type: String, unique: true },
-    password: String
+    name: { type: String, required: true },
+    email: { type: String, required: true },
+    username: { type: String, unique: true, required: true },
+    password: { type: String, required: true }
 });
 
 const User = mongoose.model('users', UserSchema);
@@ -74,7 +75,7 @@ const processWebsiteData = async (url) => {
 
         const response = await axios.post(`http://${process.env.PYTHON_URI}/annotate`, {
             input_sentence: scrapedText
-        });
+        }); 
 
         const wordData = response.data;
 
@@ -106,7 +107,7 @@ app.post('/tokens', async (req, res) => {
         res.status(200).json(wordData);
     } catch (error) {
         console.error('Error processing website:', error);
-        res.status(500).json({ error: 'Failed to process website' });
+        res.status(500).json({ error: 'Failed to process website' }); 
     }
 });
 
@@ -135,7 +136,7 @@ app.post('/query', async (req, res) => {
     }
 
     try {
-        const response = await axios.post(`http://${process.env.PYTHON_URI}/query`, { query }); 
+        const response = await axios.post(`http://${process.env.PYTHON_URI}/query`, { query });
 
         if (response.status === 200) {
             res.json(response.data);
@@ -153,10 +154,10 @@ app.post("/login", async (req, res) => {
     console.log('Login request:', username, password);
     try {
         const user = await User.findOne({ username });
-        if (!user) return res.status(401).send("Invalid username");
+        if (!user) return res.status(400).send("Invalid username");
 
         const isPasswordValid = await bcrypt.compare(password, user.password);
-        if (!isPasswordValid) return res.status(401).send("Invalid password");
+        if (!isPasswordValid) return res.status(400).send("Invalid password");
 
         res.status(200).send("Login successful");
     } catch (error) {
@@ -167,6 +168,7 @@ app.post("/login", async (req, res) => {
 
 app.post("/register", async (req, res) => {
     const { name, email, username, password } = req.body;
+    console.log('Registration request:', name, email, username, password);
 
     try {
         const existingUser = await User.findOne({ username });
@@ -183,7 +185,9 @@ app.post("/register", async (req, res) => {
         });
 
         await newUser.save();
+        console.log('User saved:', newUser);
         res.status(200).send("Registration successful");
+
     } catch (error) {
         console.error('Error during registration:', error);
         res.status(500).send("Internal server error");

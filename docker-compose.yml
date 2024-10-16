@@ -1,45 +1,49 @@
 services:
   frontend:
     build: ./client
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    volumes:
+      - /app/node_modules
+      - ./client:/app
     ports:
       - "3000:3000"
     networks:
       - new_network
+    depends_on:
+      - backend
+    command: nodemon --exec npm start
 
   backend:
     build: ./server
     ports:
       - "8080:8080"
+    volumes:
+      - ./server:/app
+      - /app/node_modules
     networks:
       - new_network
     depends_on:
-      - mongodb
       - python-service
     environment:
-      - MONGO_URI=mongodb://host.docker.internal:27017/CyberDetective
+      - MONGO_URI=mongodb+srv://CyberDetective:Armaan%40016@cluster0.6jmn8gq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
       - PYTHON_URI=python-service:5000
+      - CHOKIDAR_USEPOLLING=true
+    command: npm run dev
 
   python-service:
     build: ./python-service
     container_name: python-service
     ports:
       - "5000:5000"
-    networks:
-      - new_network
-
-  mongodb:
-    image: mongo:latest
-    ports:
-      - "27017:27017"
-    networks:
-      - new_network
     volumes:
-      - mongo-data:/data/db
+      - ./python-service:/app
+    environment:
+      - FLASK_ENV=development
+    command: flask run --host=0.0.0.0 --port=5000 --reload
+    networks:
+      - new_network
 
 networks:
   new_network:
     driver: bridge
-
-volumes:
-  mongo-data:
-    driver: local

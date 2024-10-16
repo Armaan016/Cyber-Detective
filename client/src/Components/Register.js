@@ -1,4 +1,4 @@
-import { React, useState, useRef } from 'react'
+import { React, useState, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Axios from 'axios';
 import emailjs from '@emailjs/browser';
@@ -23,7 +23,6 @@ const Register = () => {
 
     const sendEmailOTP = async () => {
         if (!email) {
-            // alert("You cannot leave the email field empty!");
             toast.error("You cannot leave the email field empty!");
             return;
         }
@@ -36,11 +35,9 @@ const Register = () => {
                 to_email: rec_email.current.value, otp: otp, to_name: name
             }, '1q-KhArbKwicHV8HG');
 
-            // alert("OTP sent successfully!");
             toast.success("OTP sent successfully!");
             setIsOtpSent(true);
         } catch (error) {
-            // alert("Failed to send email OTP. Please try again.");
             toast.error("Failed to send email OTP. Please try again.");
             console.log("Error: ", error);
         }
@@ -50,11 +47,10 @@ const Register = () => {
         e.preventDefault();
 
         if (userEnteredOtp === generatedOtp.toString()) {
-            alert("OTP verified successfully!");
+            toast.success("OTP verified successfully!");
             setIsOtpVerified(true);
-            setTimeout(() => navigate('/'), 2000);
         } else {
-            alert("Invalid OTP. Please try again.");
+            toast.error("Invalid OTP. Please try again.");
         }
     };
 
@@ -62,12 +58,12 @@ const Register = () => {
         e.preventDefault();
 
         if (!name || !email || !username || !password) {
-            alert("Please fill in all fields");
+            toast.error("Please fill in all fields");
             return;
         }
 
         if (!isOtpVerified) {
-            alert("Please verify the OTP before registering.");
+            toast.error("Please verify the OTP before registering.");
             return;
         }
 
@@ -81,18 +77,18 @@ const Register = () => {
             });
 
             if (response.status === 200) {
-                alert("Registration successful");
-                setTimeout(() => navigate('/'), 2000);
+                toast.success("Registration successful");
+                setTimeout(() => navigate('/'), 1600);
             } else {
-                alert("An error occurred. Please try again later");
+                toast.error("An error occurred. Please try again later");
             }
         } catch (error) {
             if (error.response && error.response.status === 400) {
-                alert("Username already exists. Please choose a different one.");
+                toast.error("Username already exists. Please choose a different one.");
             } else if (error.response && error.response.status === 500) {
-                alert("Internal server error. Please try again later");
+                toast.error("Internal server error. Please try again later");
             } else {
-                alert("An unknown error occurred. Please try again later");
+                toast.error("An unknown error occurred. Please try again later");
             }
         } finally {
             setName("");
@@ -105,7 +101,7 @@ const Register = () => {
     return (
         <div className="auth-form-container">
             <ToastContainer position="top-center"
-                autoClose={1500}
+                autoClose={1000}
                 hideProgressBar={false}
                 newestOnTop={false}
                 closeOnClick
@@ -117,7 +113,7 @@ const Register = () => {
                 toastStyle={{ fontSize: '16px' }}
                 bodyClassName="custom-toast-body"
                 progressBarStyle={{ background: 'white' }} />
-            <form className="auth-form" onSubmit={isOtpVerified ? handleSubmit : sendEmailOTP}>
+            <form className="auth-form" onSubmit={handleSubmit}>
                 <h2>Register</h2>
                 <input
                     type="text"
@@ -132,7 +128,7 @@ const Register = () => {
                     ref={rec_email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
-                <p style={{ fontSize: '16px', margin: '8px 0', color: 'tomato' }}>(An OTP will be sent to your email for verification)</p>
+                <p style={{ fontSize: '16px', margin: '8px 0', color: 'white' }}>(An OTP will be sent to your email for verification)</p>
                 <input
                     type="text"
                     placeholder="Username"
@@ -144,14 +140,14 @@ const Register = () => {
                     placeholder="Password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                />
+                /> 
                 {!isOtpSent && (
                     <button type="button" onClick={sendEmailOTP}>Send OTP</button>
                 )}
                 <Link to='/' className="navigation-link">
                     <p>Already a user? Login</p>
                 </Link>
-                {isOtpSent && (
+                {isOtpSent && !isOtpVerified && (
                     <>
                         <input
                             type="text"

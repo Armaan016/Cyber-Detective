@@ -6,7 +6,7 @@
 }
 
 .App {
-    background-image: url("../src/Components/Images/cream.jpg");
+    background-image: url("../src/Components/Images/wallhaven-1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -31,13 +31,13 @@
     padding: 20px;
     margin: 50px;
     border-radius: 10px;
-    border: 2px solid tomato;
+    border: 2px solid white;
     background-color: rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .auth-form h2 {
-    color: tomato;
+    color: white;
     font-size: 60px;
 }
 
@@ -48,12 +48,12 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 18px;
-    background-color: #f1e6d3;
-    color: tomato;
+    background-color: #2a3745;
+    color: white;
 }
 
 .auth-form ::placeholder {
-    color: tomato;
+    color: white;
 }
 
 
@@ -62,15 +62,15 @@
     margin-top: 10px;
     border: none;
     border-radius: 5px;
-    background-color: tomato;
-    color: #f1e6d3;
+    background-color: white;
+    color: #2a3745;
     cursor: pointer;
     font-size: 20px;
 }
 
 .auth-form button:hover {
-    color: tomato;
-    background-color: #f1e6d3;
+    color: white;
+    background-color: #2a3745;
 }
 
 .auth-form p {
@@ -81,7 +81,7 @@
 }
 
 .navigation-link p {
-    color: tomato;
+    color: white;
     text-decoration: underline;
     /* font-size: 20px; */
     /* margin: 10px; */
@@ -107,7 +107,7 @@
 }
 
 .navbar-nav .nav-link {
-    color: tomato;
+    color: white;
     padding: 10px 20px;
     font-size: 16px;
     transition: color 0.3s ease;
@@ -138,7 +138,7 @@
     font-family: "Fascinate Inline", system-ui;
     font-weight: 400;
     font-style: normal;
-    color: tomato;
+    color: white;
 }
 
 .tagline {
@@ -148,11 +148,11 @@
     left: 28%;
     color: white;
     font-size: 25px;
-    color: tomato;
+    color: white;
 }
 
 .displayedText {
-    color: tomato;
+    color: white;
     font-size: 20px;
     margin: 10px;
     padding: 10px;
@@ -174,7 +174,7 @@
 
 .tokens-table h3 {
     text-align: center;
-    color: tomato;
+    color: white;
 }
 
 .tokens-table table {

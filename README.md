@@ -73,3 +73,9 @@ Tasks Completed:
 1. Set up a Flask server to handle Python script execution for backend processing.
 <br>
 
+<br>
+Commit 6: 16th October, 2024
+<br>
+Tasks Completed:
+1. Set up hot-reloading functionality within Docker.
+<br>

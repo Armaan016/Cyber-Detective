@@ -1,9 +1,7 @@
 FROM node:16
 
-# Set the working directory
 WORKDIR /app
 
-# Install necessary dependencies for Puppeteer
 RUN apt-get update && apt-get install -y \
     docker.io \
     wget \
@@ -34,9 +32,10 @@ RUN apt-get update && apt-get install -y \
 
 COPY package*.json ./
 RUN npm install
+RUN npm install -g nodemon
 
 EXPOSE 8080
 
 COPY . .
 
-CMD ["npx", "nodemon", "index.js"]
+CMD ["npm", "run", "dev"]
