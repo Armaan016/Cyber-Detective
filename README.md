@@ -79,3 +79,10 @@ Commit 6: 16th October, 2024
 Tasks Completed:
 1. Set up hot-reloading functionality within Docker.
 <br>
+
+<br>
+Commit 7: 22nd October, 2024
+<br>
+Tasks Completed:
+1. Implemented web-scraping without using third-party libraries.
+<br>
