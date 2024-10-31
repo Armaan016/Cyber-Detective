@@ -4,7 +4,7 @@ from urllib.error import HTTPError
 from newspaper import Article
 from groq import Groq
 
-client = Groq(api_key="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")  
+client = Groq(api_key="my-api-key")  
 
 def generate_qa(content):
     prompt = f"Generate 30 questions and 30 answers, in the format Q: followed by the question and then the next line as A: followed by the answer. Give only the Q&A and no other text. Here is the content: \n\n{content}"
