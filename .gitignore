@@ -10,3 +10,4 @@ server/word_vectors.csv
 /data
 
 .env
+.docker-compose.yml

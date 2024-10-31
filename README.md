@@ -86,3 +86,12 @@ Commit 7: 22nd October, 2024
 Tasks Completed:
 1. Implemented web-scraping without using third-party libraries.
 <br>
+
+<br>
+Commit 8: 31st October, 2024
+<br>
+Tasks Completed:
+1. Integrated newspaper3k library to improve efficiency and accuracy in web scraping for article-based content extraction. 
+2. Added Q&A generation functionality using `Groq` API for extracted article text. 
+3. Ensured scraped content and generated question-answers are saved in a structured format for better file organization.
+<br>

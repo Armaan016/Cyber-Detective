@@ -26,9 +26,8 @@ services:
     depends_on:
       - python-service
     environment:
-      - MONGO_URI=process.env.MONGO_URI
+      - MONGO_URI=mongodb+srv://CyberDetective:Armaan%40016@cluster0.6jmn8gq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
       - PYTHON_URI=python-service:5000
-
       - CHOKIDAR_USEPOLLING=true
     command: npm run dev
 

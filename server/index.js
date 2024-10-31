@@ -2,12 +2,12 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const puppeteer = require('puppeteer');
-const fs = require('fs');
+const fs = require('fs'); 
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const { spawn } = require('child_process');
 const axios = require('axios');
-require('dotenv').config();
+require('dotenv').config(); 
 
 app.use(cors());
 app.use(express.json());
