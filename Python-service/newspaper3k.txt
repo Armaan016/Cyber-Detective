@@ -1,0 +1,24 @@
+Newspaper3k is a Python library specifically designed for web scraping and article extraction. It provides an efficient way to download and parse online articles, making it a popular choice for tasks like content analysis, news aggregation, and sentiment analysis.
+
+article = Article(url) -> Purpose: This initializes an Article object from the given URL.
+What Happens:
+The Article class is part of the Newspaper3k module.
+The URL is stored in the article object but no data is downloaded yet.
+Key Arguments:
+url: The web page to be scraped.
+
+article.download() -> Purpose: This method fetches the HTML content of the URL.
+
+How It Works:
+
+Sends an HTTP request to the provided URL.
+The response contains the raw HTML of the page, which is stored in the article.html attribute.
+
+article.parse() -> urpose: Extracts and structures the article content from the raw HTML.
+What Happens:
+The parse() method processes the downloaded HTML.
+lxml Parser:
+The content is parsed into a tree structure to identify the main text block.
+Heuristic Methods:
+Looks for content tags like <p>, <div>, <article>, and headers.
+Strips unnecessary tags like <script>, <style>, etc.

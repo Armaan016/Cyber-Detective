@@ -15,12 +15,12 @@ def generate_qa(content):
     )
     
     return chat_completion.choices[0].message.content
-
+    
 def process_urls(urls):
     for url in urls:
         print(f"Processing URL: {url}")
         try:
-            article = Article(url)
+            article = Article(url, fetch_images=False)
             article.download()
             article.parse()
             scraped_text = article.text
