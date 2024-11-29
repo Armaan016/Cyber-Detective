@@ -45,7 +45,7 @@ def scrape_achievements_table(url="https://www.kmit.in/aboutus/aboutus.php"):
         
         achievements = []
         rows = table.find_all('tr')[1:]
-        
+    
         for row in rows:
             cells = row.find_all('td')
             if len(cells) == 3:

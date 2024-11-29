@@ -22,7 +22,7 @@ const Kmit = () => {
             console.log("Query: ", query);
             // alert("Querying LLM. Please wait...");
             toast.info("Querying LLM. Please wait...");
-            const response = await Axios.post("http://localhost:8080/query", { query });
+            const response = await Axios.post("http://localhost:8082/query", { query });
             console.log(response);
             if (response.status === 200) {
                 console.log(response.data);

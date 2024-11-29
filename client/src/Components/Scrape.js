@@ -20,7 +20,7 @@ const ScrapePage = () => {
         }
         try {
             toast.info('Scraping website...');
-            const response = await Axios.post('http://localhost:8080/scrape', { url });
+            const response = await Axios.post('http://localhost:8082/scrape', { url });
             setScrapedText(response.data.text);
         } catch (err) {
             setScrapedText('');

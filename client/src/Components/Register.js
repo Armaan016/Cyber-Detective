@@ -69,7 +69,7 @@ const Register = () => {
 
         try {
             console.log("Sending registration request...");
-            const response = await Axios.post("http://localhost:8080/register", {
+            const response = await Axios.post("http://localhost:8082/register", {
                 name,
                 email,
                 username,

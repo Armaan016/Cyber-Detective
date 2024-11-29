@@ -1,0 +1,14 @@
+joblib
+sentence-transformers
+numpy
+scipy==1.13.1
+scikit-learn==1.5.0
+Flask
+flask-cors
+beautifulsoup4==4.12.3
+spacy==3.8.2
+requests==2.32.3
+newspaper3k==0.2.8
+groq==0.12.0
+lxml_html_clean
+transformers==4.46.3

@@ -2,12 +2,12 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const puppeteer = require('puppeteer');
-const fs = require('fs'); 
+const fs = require('fs');
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
-const { spawn } = require('child_process');
+// const { spawn } = require('child_process');
 const axios = require('axios');
-require('dotenv').config(); 
+require('dotenv').config();
 
 app.use(cors());
 app.use(express.json());
@@ -51,7 +51,7 @@ const scrapeWebsite = async (url) => {
         await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 0 });
 
         const pageText = await page.evaluate(() => {
-            const unwantedSelectors = ['header', 'footer', 'nav', '.navbar', '.footer', '.contact', '.about', '.newsletter'];
+            const unwantedSelectors = ['header', 'footer', 'nav', '.navbar', '.footer', '.contact', '.about', '.newsletter']; 
             unwantedSelectors.forEach(selector => {
                 const elements = document.querySelectorAll(selector);
                 elements.forEach(el => el.remove());
@@ -75,7 +75,7 @@ const processWebsiteData = async (url) => {
 
         const response = await axios.post(`http://${process.env.PYTHON_URI}/annotate`, {
             input_sentence: scrapedText
-        }); 
+        });
 
         const wordData = response.data;
 
@@ -107,7 +107,7 @@ app.post('/tokens', async (req, res) => {
         res.status(200).json(wordData);
     } catch (error) {
         console.error('Error processing website:', error);
-        res.status(500).json({ error: 'Failed to process website' }); 
+        res.status(500).json({ error: 'Failed to process website' });
     }
 });
 
@@ -194,6 +194,59 @@ app.post("/register", async (req, res) => {
     }
 });
 
-app.listen(8080, () => {
-    console.log('Server is running on port 8080');
+app.post('/generate', async (req, res) => {
+    const { url } = req.body;
+    console.log('Generating QA for website:', url);
+
+    if (!url) {
+        return res.status(400).json({ error: 'URL is required' });
+    }
+
+    try {
+        // const { scrapedText } = await scrapeWebsite(url);
+
+        const response = await axios.post(`http://${process.env.PYTHON_URI}/generate`, {
+            url: url
+        });
+
+        if (response.status === 200) { 
+            res.json(response.data);
+            console.log('QA generated:', response.data); 
+        } else {
+            res.status(response.status).json({ error: response.data.error });
+        }
+    } catch (error) {
+        console.error('Error generating QA:', error);
+        res.status(500).json({ error: 'Failed to generate QA' });
+    }
+});
+
+app.post('/qa', async (req, res) => {
+    console.log('Request body:', req.body);
+    const { query } = req.body;
+    console.log('Answering query:', query);
+
+    if (!query) {
+        return res.status(400).json({ error: 'Query is required' });
+    }
+
+    try {
+        const response = await axios.post(`http://${process.env.PYTHON_URI}/qa`, {
+            question: query,
+        });
+
+        if (response.status === 200) {
+            console.log(response.data);
+            res.json(response.data);
+        } else {
+            res.status(response.status).json({ error: response.data.error });
+        }
+    } catch (error) {
+        console.error('Error answering question:', error);
+        res.status(500).json({ error: 'Failed to answer question' });
+    }
+});
+
+app.listen(8082, () => {
+    console.log('Server is running on port 8082');
 });

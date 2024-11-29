@@ -32,7 +32,7 @@
     margin: 50px;
     border-radius: 10px;
     border: 2px solid white;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #31475a;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -88,13 +88,16 @@
 }
 
 .llm-response {
+    /* position: absolute;
+    top: 50%;
+    left: 47%; */
     margin-top: 20px;
-    max-width: 600px;
+    max-width: 950px;
     color: white;
     border: 2px solid white;
     padding: 10px;
     border-radius: 5px;
-    background-color: coral;
+    background-color: green;
     /* word-break: break-all; */
     word-wrap: break-word;
 }
@@ -131,8 +134,8 @@
 
 .heading {
     position: absolute;
-    top: 35%;
-    left: 17%;
+    top: 48%;
+    left: 10%;
     color: white;
     font-size: 75px;
     font-family: "Fascinate Inline", system-ui;
@@ -144,7 +147,7 @@
 .tagline {
     /* fontSize: '25px', top: '47%', left: '24%' */
     position: absolute;
-    top: 47%;
+    top: 62%;
     left: 28%;
     color: white;
     font-size: 25px;
@@ -175,6 +178,7 @@
 .tokens-table h3 {
     text-align: center;
     color: white;
+    text-decoration: underline;
 }
 
 .tokens-table table {
@@ -198,7 +202,12 @@
 
 .tokens-table tr:nth-child(even) {
     background-color: #f9f9f9;
-    color: black;
+    color: #31475a;
+}
+
+.tokens-table tr:nth-child(odd) {
+    background-color: #31475a;
+    color: white;
 }
 
 .tokens-table tr:hover {

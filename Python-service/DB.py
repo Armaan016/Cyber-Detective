@@ -11,7 +11,7 @@ client = Groq(api_key="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"
 newspaper.settings.CACHE_DIRECTORY = 'cache_directory'
 
 def generate_qa(content):
-    prompt = f"Generate 30 questions and 30 answers in the format: Q1, A1, Q2, A2, etc. Provide only the Q&A, no additional text. Here is the content:\n\n{content}"
+    prompt = f"Extract 30 questions and 30 answers from the given text in the format: All questions numbered 1 to 30 in one go, followed by all the respective answers numbered 1 to 30. Provide only the Q&A, no additional text. Make sure the answers are present word-to-word in the text. Do not generate your own answers, strictly extract the answers from the content only. Here is the content:\n\n{content}"
     return call_groq_api(prompt, "llama3-70b-8192")
 
 def summarize(content):
@@ -30,7 +30,7 @@ def call_groq_api(prompt, model, retries=5, delay=30):
         except Exception as e:
             error_message = str(e)
             if "rate limit" in error_message.lower():
-                wait_time = delay * (2 ** attempt)  # Exponential backoff
+                wait_time = delay * (2 ** attempt)  
                 print(f"Rate limit reached. Waiting for {wait_time} seconds before retrying...")
                 time.sleep(wait_time)
             else:
@@ -85,7 +85,8 @@ def process_url(url):
 
         return {
             'URL': url,
-            'Scraped Content': summarized_content,
+            'Scraped Content': scraped_text,
+            'Summarized Content': summarized_content,
             'Questions': questions,
             'Answers': answers,
         }
@@ -94,29 +95,20 @@ def process_url(url):
         print(f"An error occurred while processing {url}: {e}")
         return None
 
-def process_urls(urls, output_csv="output.csv", max_workers=5):
+def process_urls(urls, max_workers=5):
     """Processes a list of URLs and saves the results to a CSV file."""
-    with open(output_csv, 'w', newline='', encoding='utf-8') as csvfile:
-        fieldnames = ['URL', 'Scraped Content', 'Questions', 'Answers']
-        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-        writer.writeheader()
 
-        with ThreadPoolExecutor(max_workers=max_workers) as executor:
-            future_to_url = {executor.submit(process_url, url): url for url in urls}
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        future_to_url = {executor.submit(process_url, url): url for url in urls}
 
-            for i, future in enumerate(as_completed(future_to_url), start=1):
-                result = future.result()
-                if result:
-                    writer.writerow(result)
-                    print(f"Data saved for URL: {result['URL']} ({i}/{len(urls)})")
+        for i, future in enumerate(as_completed(future_to_url), start=1):
+            result = future.result()
+            if result:
+                print(f"Data saved for URL: {result['URL']} ({i}/{len(urls)})")
 
 if __name__ == "__main__":
     urls = [
-        "https://www.welivesecurity.com/en/business-security/beyond-checkbox-demystifying-cybersecurity-compliance/",
-        "https://www.welivesecurity.com/en/cybercrime/dont-become-statistic-defending-data-dark-web/",
-        "https://gridinsoft.com/adware",
-        "https://medium.com/@Cyb3rsecurity/demystifying-cybersecurity-threats-a-guide-to-different-attack-types-5e21e7351c95",
-        "https://medium.com/@Cyb3rsecurity/vulnerability-scanning-v-s-penetration-testing-1214980c54ec"
+        "https://medium.com/@Cyb3rsecurity/demystifying-cybersecurity-threats-a-guide-to-different-attack-types-5e21e7351c95"
     ]
 
-    process_urls(urls, output_csv="output.csv", max_workers=5)
+    process_urls(urls, max_workers=5)

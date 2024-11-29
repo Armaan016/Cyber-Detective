@@ -6,7 +6,7 @@ import Sidebar from './Sidebar';
 
 const Tokens = () => {
     const [url, setUrl] = useState('');
-    const [tokens, setTokens] = useState([]); 
+    const [tokens, setTokens] = useState([]);
 
     const handleScrape = async (e) => {
         e.preventDefault();
@@ -17,13 +17,13 @@ const Tokens = () => {
 
         try {
             toast.info('Annotating website...');
-            const response = await Axios.post('http://localhost:8080/tokens', { url });
+            const response = await Axios.post('http://localhost:8082/tokens', { url });
             if (response.status === 200) {
-                toast.success('Website scraped successfully and data saved in MongoDB!');
+                toast.success('Website scraped and tokens annotated successfully!');
                 setUrl('');
                 console.log(response.data);
 
-                setTokens(response.data);  
+                setTokens(response.data);
             }
         } catch (err) {
             toast.error('Failed to scrape website!');
@@ -47,8 +47,8 @@ const Tokens = () => {
                     toastStyle={{ fontSize: '16px' }}
                     bodyClassName="custom-toast-body"
                     progressBarStyle={{ background: 'white' }} />
-                <form className='auth-form' style={{ maxWidth: '500px', marginTop: '200px' }}>
-                    <h2 style={{ fontSize: '29px' }}>Annotate Website and Store Tokens</h2>
+                <form className='auth-form' style={{ maxWidth: '500px' }}>
+                    <h2 style={{ fontSize: '29px' }}>Annotate Tokens from Website</h2>
                     <input
                         type="text"
                         placeholder="Enter URL"

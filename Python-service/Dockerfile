@@ -5,9 +5,11 @@ WORKDIR /app
 COPY app.py ./
 COPY requirements.txt ./
 COPY dt_model.pkl /app/dt_model.pkl
+COPY embeddings.json /app/embeddings.json
 
 RUN pip install --no-cache-dir -r requirements.txt
 RUN python -m spacy download en_core_web_sm
+RUN pip install --no-cache-dir --upgrade newspaper3k requests
 
 EXPOSE 5000
 

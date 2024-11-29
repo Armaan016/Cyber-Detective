@@ -2,11 +2,17 @@ import warnings
 import json
 import joblib
 from sentence_transformers import SentenceTransformer
-from collections import Counter
+from collections import Counter 
 from flask import Flask, request, jsonify
-from flask_cors import CORS  
+from flask_cors import CORS     
+from transformers import pipeline
 
 from RAG import scrape_kmit, scrape_kmit_aboutus, scrape_kmit_management, scrape_kmit_principal_academic_director, scrape_kmit_placements, get_relevant_contexts
+from NLPScraping import process_url
+from RagQA import get_relevant_QAcontexts
+
+with open("./embeddings.json", "r") as f:
+    embeddings_data = json.load(f)
 
 with warnings.catch_warnings():
     warnings.simplefilter("ignore", FutureWarning)
@@ -32,7 +38,7 @@ reverse_tag_mapping = {v: k for k, v in tag_mapping.items()}
 model_filename = r"dt_model.pkl"
 kn_classifier = joblib.load(model_filename)
 
-def predict(input_sentence):
+def predict(input_sentence): 
     words = input_sentence.split()
     results = []
     for word in words:
@@ -78,8 +84,8 @@ def annotate():
 @app.route('/query', methods=['POST'])
 def scrape():
     try:
-        data = request.get_json()
-        query = data.get('query', '').strip()
+        data = request.get_json() 
+        query = data.get('query', '').strip()  
         
         scraped_text = scrape_kmit()
         scraped_text += scrape_kmit_aboutus()
@@ -91,6 +97,35 @@ def scrape():
 
         return jsonify(relevant_contexts)
 
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+    
+@app.route('/generate', methods=['POST'])
+def generate():
+    try:
+        url = request.get_json().get('url', '').strip() 
+        # process_url(url)
+        print("URL:", url)
+        result, status = process_url(url) 
+        print("Result:", result)
+        
+        return jsonify(result), status
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+    
+@app.route('/qa', methods=['POST'])
+def qa():
+    try:
+        data = request.get_json()
+        question = data.get('question', '').strip() 
+        # context = data.get('context', '').strip()
+        context = get_relevant_QAcontexts(question, embeddings_data)
+        print("Context:", context)
+        
+        model = pipeline('question-answering', model='Armaan016/BertFineTunedCyberDetective')
+        result = model(question=question, context=context)
+        
+        return jsonify({"answer" : result['answer']})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 

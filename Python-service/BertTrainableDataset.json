@@ -1,0 +1,3361 @@
+{
+    "data": [
+        {
+            "title": "Cyber Security Overview",
+            "paragraphs": [
+                {
+                    "context": "AI has been transforming cybersecurity since 2012, initially through behavioral analytics to detect anomalies like unusual logins or data transfers. Over time, its role expanded to advanced machine learning and deep learning, enabling predictive threat detection and automated defense mechanisms. Today, over 80% of cybersecurity vendors incorporate AI, leveraging tools like generative AI to stay ahead of an ever-evolving threat landscape.",
+                    "qas": [
+                        {
+                            "id": "0",
+                            "question": "When did AI begin transforming cybersecurity?",
+                            "answers": [
+                                {
+                                    "text": "",
+                                    "answer_start": 0
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "1",
+                            "question": "What was the initial role of AI in cybersecurity?",
+                            "answers": [
+                                {
+                                    "text": "behavioral analytics to detect anomalies like unusual logins or data transfers",
+                                    "answer_start": 69
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "2",
+                            "question": "What are examples of anomalies detected by AI in its initial role?",
+                            "answers": [
+                                {
+                                    "text": "unusual logins or data transfers",
+                                    "answer_start": 115
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "3",
+                            "question": "How has the role of AI in cybersecurity expanded over time?",
+                            "answers": [
+                                {
+                                    "text": "advanced machine learning and deep learning, enabling predictive threat detection and automated defense mechanisms",
+                                    "answer_start": 90
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "4",
+                            "question": "What technologies enable predictive threat detection and automated defense mechanisms?",
+                            "answers": [
+                                {
+                                    "text": "advanced machine learning and deep learning",
+                                    "answer_start": 181
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "5",
+                            "question": "What percentage of cybersecurity vendors incorporate AI today?",
+                            "answers": [
+                                {
+                                    "text": "over 80%",
+                                    "answer_start": 149
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "6",
+                            "question": "What do cybersecurity vendors use AI tools for?",
+                            "answers": [
+                                {
+                                    "text": "leveraging tools like generative AI to stay ahead of an ever-evolving threat landscape",
+                                    "answer_start": 410
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "7",
+                            "question": "What is one specific type of AI tool mentioned in the context?",
+                            "answers": [
+                                {
+                                    "text": "generative AI",
+                                    "answer_start": 376
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "8",
+                            "question": "What type of threat landscape do cybersecurity vendors face?",
+                            "answers": [
+                                {
+                                    "text": "an ever-evolving threat landscape",
+                                    "answer_start": 246
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "9",
+                            "question": "What was the purpose of behavioral analytics in AIâ€™s initial role?",
+                            "answers": [
+                                {
+                                    "text": "to detect anomalies like unusual logins or data transfers",
+                                    "answer_start": 100
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "10",
+                            "question": "What has AI enabled in the context of predictive threat detection?",
+                            "answers": [
+                                {
+                                    "text": "automated defense mechanisms",
+                                    "answer_start": 267
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "11",
+                            "question": "Which AI capabilities were developed over time for cybersecurity?",
+                            "answers": [
+                                {
+                                    "text": "advanced machine learning and deep learning",
+                                    "answer_start": 181
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "12",
+                            "question": "How do vendors utilize generative AI in cybersecurity?",
+                            "answers": [
+                                {
+                                    "text": "to stay ahead of an ever-evolving threat landscape",
+                                    "answer_start": 410
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "13",
+                            "question": "What does behavioral analytics detect in the context of AI?",
+                            "answers": [
+                                {
+                                    "text": "anomalies like unusual logins or data transfers",
+                                    "answer_start": 100
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "14",
+                            "question": "What aspect of AI tools helps vendors address cybersecurity threats?",
+                            "answers": [
+                                {
+                                    "text": "leveraging tools like generative AI",
+                                    "answer_start": 354
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "15",
+                            "question": "Which area of learning is mentioned alongside advanced machine learning in the context?",
+                            "answers": [
+                                {
+                                    "text": "deep learning",
+                                    "answer_start": 198
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "16",
+                            "question": "How do cybersecurity vendors maintain their edge in the threat landscape?",
+                            "answers": [
+                                {
+                                    "text": "leveraging tools like generative AI",
+                                    "answer_start": 354
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "17",
+                            "question": "What kind of threats does predictive threat detection aim to address?",
+                            "answers": [
+                                {
+                                    "text": "an ever-evolving threat landscape",
+                                    "answer_start": 246
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "18",
+                            "question": "What has been the role of AI since 2012 in cybersecurity?",
+                            "answers": [
+                                {
+                                    "text": "behavioral analytics to detect anomalies like unusual logins or data transfers",
+                                    "answer_start": 69
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "19",
+                            "question": "How is the threat landscape described in the context?",
+                            "answers": [
+                                {
+                                    "text": "an ever-evolving threat landscape",
+                                    "answer_start": 246
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "The battle between attackers and defenders has evolved into a high-stakes \"Machine vs. Machine\" contest. While defenders use AI to automate threat detection and responses, attackers deploy AI-driven tools to exploit vulnerabilities. This rapid escalation underscores the need for resilient and adaptive AI models to counter increasingly sophisticated threats.",
+                    "qas": [
+                        {
+                            "id": "20",
+                            "question": "What has the battle between attackers and defenders evolved into?",
+                            "answers": [
+                                {
+                                    "text": "high-stakes \"Machine vs. Machine\" contest",
+                                    "answer_start": 62
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "21",
+                            "question": "What do defenders use AI for in the battle?",
+                            "answers": [
+                                {
+                                    "text": "to automate threat detection and responses",
+                                    "answer_start": 131
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "22",
+                            "question": "What do attackers deploy AI-driven tools to do?",
+                            "answers": [
+                                {
+                                    "text": "to exploit vulnerabilities",
+                                    "answer_start": 208
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "23",
+                            "question": "What does the rapid escalation underscore the need for?",
+                            "answers": [
+                                {
+                                    "text": "resilient and adaptive AI models",
+                                    "answer_start": 280
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "24",
+                            "question": "What kind of AI models are needed to counter increasingly sophisticated threats?",
+                            "answers": [
+                                {
+                                    "text": "resilient and adaptive AI models",
+                                    "answer_start": 280
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Despite its potential, AI carries significant risks. Without proper safeguards or \"guardrails,\" these systems are vulnerable to manipulation, such as adversarial attacks that trick models into making erroneous decisions. The rush to implement AI solutions often prioritizes speed and profitability over security, increasing the potential for vulnerabilities.",
+                    "qas": [
+                        {
+                            "id": "25",
+                            "question": "What does AI carry despite its potential?",
+                            "answers": [
+                                {
+                                    "text": "significant risks",
+                                    "answer_start": 34
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "26",
+                            "question": "What are AI systems vulnerable to without proper safeguards?",
+                            "answers": [
+                                {
+                                    "text": "manipulation",
+                                    "answer_start": 128
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "27",
+                            "question": "What type of attacks can trick AI models into making erroneous decisions?",
+                            "answers": [
+                                {
+                                    "text": "adversarial attacks",
+                                    "answer_start": 150
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "28",
+                            "question": "What does the rush to implement AI solutions often prioritize?",
+                            "answers": [
+                                {
+                                    "text": "speed and profitability",
+                                    "answer_start": 274
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "29",
+                            "question": "What does prioritizing speed and profitability over security increase?",
+                            "answers": [
+                                {
+                                    "text": "the potential for vulnerabilities",
+                                    "answer_start": 12
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "AI alone is not a silver bullet for cybersecurity. Complementary strategies like Automated Moving Target Defense (AMTD) provide additional layers of security by constantly shifting the attack surface, making it more challenging for adversaries to gain a foothold. These methods enhance resilience, especially when combined with platform-based tools like Microsoftâ€™s E5, which integrate AI and analytics into a unified security framework.",
+                    "qas": [
+                        {
+                            "id": "30",
+                            "question": "What is AI not considered to be for cybersecurity?",
+                            "answers": [
+                                {
+                                    "text": "a silver bullet for cybersecurity",
+                                    "answer_start": 18
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "31",
+                            "question": "What does Automated Moving Target Defense (AMTD) provide?",
+                            "answers": [
+                                {
+                                    "text": "additional layers of security",
+                                    "answer_start": 128
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "32",
+                            "question": "How does AMTD make it more challenging for adversaries?",
+                            "answers": [
+                                {
+                                    "text": "by constantly shifting the attack surface",
+                                    "answer_start": 161
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "33",
+                            "question": "What do complementary methods enhance?",
+                            "answers": [
+                                {
+                                    "text": "resilience",
+                                    "answer_start": 286
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "34",
+                            "question": "What platform-based tool integrates AI and analytics into a unified security framework?",
+                            "answers": [
+                                {
+                                    "text": "Microsoftâ€™s E5",
+                                    "answer_start": 354
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Organizations should adopt a multi-layered approach to cybersecurity, leveraging AI while also implementing adaptive mechanisms like AMTD to mitigate risks. For a deeper exploration of these strategies, the on-demand webinar offers insights into real-world applications and practical advice for staying ahead of emerging threats.",
+                    "qas": [
+                        {
+                            "id": "35",
+                            "question": "What approach should organizations adopt for cybersecurity?",
+                            "answers": [
+                                {
+                                    "text": "a multi-layered approach to cybersecurity",
+                                    "answer_start": 29
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "36",
+                            "question": "What should organizations leverage while implementing adaptive mechanisms?",
+                            "answers": [
+                                {
+                                    "text": "AI",
+                                    "answer_start": 81
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "37",
+                            "question": "What is one adaptive mechanism mentioned to mitigate risks?",
+                            "answers": [
+                                {
+                                    "text": "AMTD",
+                                    "answer_start": 133
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "38",
+                            "question": "What does the on-demand webinar offer for a deeper exploration of these strategies?",
+                            "answers": [
+                                {
+                                    "text": "insights into real-world applications",
+                                    "answer_start": 232
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "39",
+                            "question": "What type of advice does the on-demand webinar provide?",
+                            "answers": [
+                                {
+                                    "text": "practical advice for staying ahead of emerging threats",
+                                    "answer_start": 274
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Wireless networks are critical for business operations but are increasingly targeted by cybercriminals, necessitating robust security measures like WiFi penetration testing. This process identifies vulnerabilities, allowing organizations to strengthen their defenses. Ethical hacking, including penetration testing, plays a key role in preemptively identifying and mitigating risks, enhancing overall cybersecurity strategies. Proactive measures such as structured planning, scoping, and remediation are essential for effective penetration testing.",
+                    "qas": [
+                        {
+                            "id": "40",
+                            "question": "Why are wireless networks critical for business operations?",
+                            "answers": [
+                                {
+                                    "text": "for business operations",
+                                    "answer_start": 31
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "41",
+                            "question": "What is increasingly targeting wireless networks?",
+                            "answers": [
+                                {
+                                    "text": "cybercriminals",
+                                    "answer_start": 88
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "42",
+                            "question": "What security measure is mentioned to address wireless network vulnerabilities?",
+                            "answers": [
+                                {
+                                    "text": "WiFi penetration testing",
+                                    "answer_start": 148
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "43",
+                            "question": "What does WiFi penetration testing identify?",
+                            "answers": [
+                                {
+                                    "text": "vulnerabilities",
+                                    "answer_start": 198
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "44",
+                            "question": "What does WiFi penetration testing allow organizations to do?",
+                            "answers": [
+                                {
+                                    "text": "strengthen their defenses",
+                                    "answer_start": 241
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "45",
+                            "question": "What role does ethical hacking play in cybersecurity?",
+                            "answers": [
+                                {
+                                    "text": "preemptively identifying and mitigating risks",
+                                    "answer_start": 336
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "46",
+                            "question": "What is included in ethical hacking?",
+                            "answers": [
+                                {
+                                    "text": "penetration testing",
+                                    "answer_start": 153
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "47",
+                            "question": "How does penetration testing enhance cybersecurity strategies?",
+                            "answers": [
+                                {
+                                    "text": "enhancing overall cybersecurity strategies",
+                                    "answer_start": 125
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "48",
+                            "question": "What proactive measures are essential for effective penetration testing?",
+                            "answers": [
+                                {
+                                    "text": "structured planning, scoping, and remediation",
+                                    "answer_start": 454
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "49",
+                            "question": "What are examples of proactive measures for penetration testing?",
+                            "answers": [
+                                {
+                                    "text": "structured planning, scoping, and remediation",
+                                    "answer_start": 454
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "In the evolving cybersecurity landscape, many organizations are turning to virtual Chief Information Security Officers (vCISOs) for expert leadership. These AI-assisted, on-demand consultants offer cost-effective solutions by automating tasks such as threat monitoring and risk management while providing scalable and strategic cybersecurity support. vCISOs are especially beneficial for small and medium-sized businesses lacking full-time security executives, ensuring tailored strategies to address sophisticated threats.",
+                    "qas": [
+                        {
+                            "id": "50",
+                            "question": "What are many organizations turning to for expert leadership in cybersecurity?",
+                            "answers": [
+                                {
+                                    "text": "virtual Chief Information Security Officers (vCISOs)",
+                                    "answer_start": 75
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "51",
+                            "question": "What do AI-assisted, on-demand consultants offer?",
+                            "answers": [
+                                {
+                                    "text": "cost-effective solutions",
+                                    "answer_start": 198
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "52",
+                            "question": "What tasks do AI-assisted vCISOs automate?",
+                            "answers": [
+                                {
+                                    "text": "threat monitoring and risk management",
+                                    "answer_start": 251
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "53",
+                            "question": "How do vCISOs provide support to organizations?",
+                            "answers": [
+                                {
+                                    "text": "providing scalable and strategic cybersecurity support",
+                                    "answer_start": 16
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "54",
+                            "question": "For which type of businesses are vCISOs especially beneficial?",
+                            "answers": [
+                                {
+                                    "text": "small and medium-sized businesses",
+                                    "answer_start": 388
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "55",
+                            "question": "What do vCISOs ensure for businesses lacking full-time security executives?",
+                            "answers": [
+                                {
+                                    "text": "tailored strategies to address sophisticated threats",
+                                    "answer_start": 470
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "56",
+                            "question": "What types of strategies do vCISOs address?",
+                            "answers": [
+                                {
+                                    "text": "tailored strategies to address sophisticated threats",
+                                    "answer_start": 470
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Cybersecurity is crucial for protecting software, systems, and networks from unauthorized access, theft, and service disruptions. It has become more important as digital systems and connected devices expand. Cyberattacks, including malware, ransomware, phishing, and DoS attacks, exploit vulnerabilities documented in databases like CVE. These threats target various sectors, from individuals to large corporations, using techniques such as eavesdropping, privilege escalation, and social engineering.",
+                    "qas": [
+                        {
+                            "id": "57",
+                            "question": "What is cybersecurity crucial for protecting?",
+                            "answers": [
+                                {
+                                    "text": "software, systems, and networks",
+                                    "answer_start": 40
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "58",
+                            "question": "Why has cybersecurity become more important?",
+                            "answers": [
+                                {
+                                    "text": "as digital systems and connected devices expand",
+                                    "answer_start": 50
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "59",
+                            "question": "What types of cyberattacks are mentioned in the context?",
+                            "answers": [
+                                {
+                                    "text": "malware, ransomware, phishing, and DoS attacks",
+                                    "answer_start": 232
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "60",
+                            "question": "What do cyberattacks exploit?",
+                            "answers": [
+                                {
+                                    "text": "vulnerabilities",
+                                    "answer_start": 288
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "61",
+                            "question": "Where are vulnerabilities in cyberattacks documented?",
+                            "answers": [
+                                {
+                                    "text": "in databases like CVE",
+                                    "answer_start": 318
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "62",
+                            "question": "Who do these cyber threats target?",
+                            "answers": [
+                                {
+                                    "text": "various sectors, from individuals to large corporations",
+                                    "answer_start": 359
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "63",
+                            "question": "What techniques do cyberattacks use?",
+                            "answers": [
+                                {
+                                    "text": "eavesdropping, privilege escalation, and social engineering",
+                                    "answer_start": 441
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "High-profile cyber incidents include data breaches at Target and Home Depot, the Stuxnet worm, and ransomware attacks targeting healthcare institutions. Attacks often involve financial, political, or disruptive motivations, with cybercriminals, nation-states, and hacktivists being the primary perpetrators. These attacks highlight the challenges of attributing and prosecuting cybercrimes due to jurisdictional issues and the lack of global regulations.",
+                    "qas": [
+                        {
+                            "id": "64",
+                            "question": "What are examples of high-profile cyber incidents mentioned?",
+                            "answers": [
+                                {
+                                    "text": "data breaches at Target and Home Depot, the Stuxnet worm, and ransomware attacks targeting healthcare institutions",
+                                    "answer_start": 37
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "65",
+                            "question": "What types of motivations are often involved in cyberattacks?",
+                            "answers": [
+                                {
+                                    "text": "financial, political, or disruptive motivations",
+                                    "answer_start": 175
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "66",
+                            "question": "Who are the primary perpetrators of cyberattacks?",
+                            "answers": [
+                                {
+                                    "text": "cybercriminals, nation-states, and hacktivists",
+                                    "answer_start": 229
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "67",
+                            "question": "What challenges do these cyberattacks highlight?",
+                            "answers": [
+                                {
+                                    "text": "the challenges of attributing and prosecuting cybercrimes",
+                                    "answer_start": 336
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "68",
+                            "question": "Why is it difficult to attribute and prosecute cybercrimes?",
+                            "answers": [
+                                {
+                                    "text": "due to jurisdictional issues and the lack of global regulations",
+                                    "answer_start": 397
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "This global effort underscores the importance of cybersecurity in safeguarding sensitive data, public infrastructure, and national security interests amidst a growing landscape of cyber threats.",
+                    "qas": [
+                        {
+                            "id": "69",
+                            "question": "What does this global effort underscore the importance of?",
+                            "answers": [
+                                {
+                                    "text": "the importance of cybersecurity",
+                                    "answer_start": 35
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "70",
+                            "question": "What does cybersecurity safeguard?",
+                            "answers": [
+                                {
+                                    "text": "sensitive data, public infrastructure, and national security interests",
+                                    "answer_start": 79
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "71",
+                            "question": "What is growing amidst the need for cybersecurity?",
+                            "answers": [
+                                {
+                                    "text": "a growing landscape of cyber threats",
+                                    "answer_start": 159
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Adware is a type of malware that forces users to view unwanted advertisements, often causing severe disruptions to user experience and posing significant privacy risks. It operates by making unauthorized changes to system and browser settings, frequently installing as a Potentially Unwanted Program (PUP) or browser hijacker. Beyond mere annoyance, adware can compromise user privacy by tracking browsing habits and personal data, which are often sold to third parties.",
+                    "qas": [
+                        {
+                            "id": "72",
+                            "question": "What is adware?",
+                            "answers": [
+                                {
+                                    "text": "a type of malware",
+                                    "answer_start": 12
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "73",
+                            "question": "What does adware force users to view?",
+                            "answers": [
+                                {
+                                    "text": "unwanted advertisements",
+                                    "answer_start": 54
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "74",
+                            "question": "What impact does adware have on user experience?",
+                            "answers": [
+                                {
+                                    "text": "causing severe disruptions",
+                                    "answer_start": 85
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "75",
+                            "question": "How does adware operate?",
+                            "answers": [
+                                {
+                                    "text": "by making unauthorized changes to system and browser settings",
+                                    "answer_start": 191
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "76",
+                            "question": "What is a common way adware installs itself?",
+                            "answers": [
+                                {
+                                    "text": "as a Potentially Unwanted Program (PUP) or browser hijacker",
+                                    "answer_start": 54
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "77",
+                            "question": "How can adware compromise user privacy?",
+                            "answers": [
+                                {
+                                    "text": "by tracking browsing habits and personal data",
+                                    "answer_start": 388
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "78",
+                            "question": "What does adware track?",
+                            "answers": [
+                                {
+                                    "text": "browsing habits and personal data",
+                                    "answer_start": 397
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "79",
+                            "question": "What happens to the personal data tracked by adware?",
+                            "answers": [
+                                {
+                                    "text": "often sold to third parties",
+                                    "answer_start": 79
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Legally, adware straddles a fine line between nuisance and criminal activity. Federal and state laws in the U.S., such as California's Consumer Protection Against Computer Spyware Act, prohibit unauthorized software installations. However, enforcement remains challenging, particularly when adware operates under the guise of legitimate advertising-supported software.",
+                    "qas": [
+                        {
+                            "id": "80",
+                            "question": "How does adware straddle the legal line?",
+                            "answers": [
+                                {
+                                    "text": "between nuisance and criminal activity",
+                                    "answer_start": 38
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "81",
+                            "question": "What laws in the U.S. prohibit unauthorized software installations?",
+                            "answers": [
+                                {
+                                    "text": "Federal and state laws in the U.S.",
+                                    "answer_start": 78
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "82",
+                            "question": "What specific act is mentioned in California's laws?",
+                            "answers": [
+                                {
+                                    "text": "California's Consumer Protection Against Computer Spyware Act",
+                                    "answer_start": 122
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "83",
+                            "question": "What does California's law protect against?",
+                            "answers": [
+                                {
+                                    "text": "unauthorized software installations",
+                                    "answer_start": 194
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "84",
+                            "question": "What challenge exists in enforcing laws against adware?",
+                            "answers": [
+                                {
+                                    "text": "enforcement remains challenging, particularly when adware operates under the guise of legitimate advertising-supported software",
+                                    "answer_start": 337
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "To mitigate the risks posed by adware, users are advised to adopt a multi-faceted approach, including the use of robust anti-malware tools and maintaining up-to-date software. Additionally, exercising caution when downloading free software or clicking on unfamiliar links is crucial. Infected systems require thorough cleaning, which may involve resetting browser settings, removing suspicious extensions, or using specialized adware removal tools.",
+                    "qas": [
+                        {
+                            "id": "85",
+                            "question": "What is recommended to mitigate the risks posed by adware?",
+                            "answers": [
+                                {
+                                    "text": "adopt a multi-faceted approach",
+                                    "answer_start": 60
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "86",
+                            "question": "What tools should users use to protect against adware?",
+                            "answers": [
+                                {
+                                    "text": "robust anti-malware tools",
+                                    "answer_start": 113
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "87",
+                            "question": "What should users maintain to protect their systems?",
+                            "answers": [
+                                {
+                                    "text": "maintaining up-to-date software",
+                                    "answer_start": 143
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "88",
+                            "question": "What caution should users exercise to avoid adware?",
+                            "answers": [
+                                {
+                                    "text": "exercising caution",
+                                    "answer_start": 190
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "89",
+                            "question": "What is crucial when downloading free software or clicking on unfamiliar links?",
+                            "answers": [
+                                {
+                                    "text": "caution when downloading free software or clicking on unfamiliar links",
+                                    "answer_start": 214
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "90",
+                            "question": "What is required to clean infected systems?",
+                            "answers": [
+                                {
+                                    "text": "thorough cleaning",
+                                    "answer_start": 309
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "91",
+                            "question": "What actions may be involved in cleaning infected systems?",
+                            "answers": [
+                                {
+                                    "text": "resetting browser settings, removing suspicious extensions, or using specialized adware removal tools",
+                                    "answer_start": 0
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Cybersecurity is evolving rapidly as new threats and attack tactics emerge continuously. One critical strategy to counter these threats is Cyber Human Intelligence (HUMINT), which blends traditional intelligence methods with digital tools to uncover vulnerabilities and improve defense strategies. Staying ahead of cybercriminals requires understanding this constantly shifting threat landscape.",
+                    "qas": [
+                        {
+                            "id": "92",
+                            "question": "How is cybersecurity evolving?",
+                            "answers": [
+                                {
+                                    "text": "rapidly as new threats and attack tactics emerge continuously",
+                                    "answer_start": 75
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "93",
+                            "question": "What is one critical strategy to counter new threats?",
+                            "answers": [
+                                {
+                                    "text": "Cyber Human Intelligence (HUMINT)",
+                                    "answer_start": 0
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "94",
+                            "question": "What does Cyber Human Intelligence (HUMINT) blend?",
+                            "answers": [
+                                {
+                                    "text": "traditional intelligence methods with digital tools",
+                                    "answer_start": 151
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "95",
+                            "question": "What does HUMINT aim to uncover?",
+                            "answers": [
+                                {
+                                    "text": "vulnerabilities",
+                                    "answer_start": 250
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "96",
+                            "question": "What is required to stay ahead of cybercriminals?",
+                            "answers": [
+                                {
+                                    "text": "understanding this constantly shifting threat landscape",
+                                    "answer_start": 339
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Data theft malware, which steals financial or login credentials. Clipboard hijackers, which manipulate cryptocurrency transactions by replacing wallet addresses. Crypto-mining malware, which exploits system resources for unauthorized mining. Ransomware, which locks users out of data or systems until a ransom is paid. Network-based attacks also present significant risks. Botnets, networks of compromised devices, enable large-scale DDoS (distributed denial-of-service) attacks. Bulletproof hosting providers offer a haven for cybercriminals, allowing them to host malware or phishing sites with minimal risk of law enforcement intervention.",
+                    "qas": [
+                        {
+                            "id": "97",
+                            "question": "What does data theft malware steal?",
+                            "answers": [
+                                {
+                                    "text": "financial or login credentials",
+                                    "answer_start": 33
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "98",
+                            "question": "What do clipboard hijackers manipulate?",
+                            "answers": [
+                                {
+                                    "text": "cryptocurrency transactions by replacing wallet addresses",
+                                    "answer_start": 103
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "99",
+                            "question": "What does crypto-mining malware exploit?",
+                            "answers": [
+                                {
+                                    "text": "system resources for unauthorized mining",
+                                    "answer_start": 200
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "100",
+                            "question": "What does ransomware do to users?",
+                            "answers": [
+                                {
+                                    "text": "locks users out of data or systems until a ransom is paid",
+                                    "answer_start": 452
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "101",
+                            "question": "What kind of attacks do network-based risks involve?",
+                            "answers": [
+                                {
+                                    "text": "DDoS (distributed denial-of-service) attacks",
+                                    "answer_start": 333
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "102",
+                            "question": "What are botnets used for?",
+                            "answers": [
+                                {
+                                    "text": "enable large-scale DDoS (distributed denial-of-service) attacks",
+                                    "answer_start": 422
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "103",
+                            "question": "What is a botnet?",
+                            "answers": [
+                                {
+                                    "text": "networks of compromised devices",
+                                    "answer_start": 382
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "104",
+                            "question": "What do bulletproof hosting providers offer to cybercriminals?",
+                            "answers": [
+                                {
+                                    "text": "a haven for cybercriminals, allowing them to host malware or phishing sites with minimal risk of law enforcement intervention",
+                                    "answer_start": 452
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Phishing is a type of cyberattack where attackers impersonate legitimate entities to trick individuals into providing sensitive information, such as passwords or credit card details. Phishing attacks often occur through deceptive emails, fake websites, or fraudulent phone calls, targeting victims by exploiting trust. Spear phishing is a more targeted form of phishing, where attackers customize their messages to a specific individual or organization. Phishing can lead to significant financial losses, identity theft, and unauthorized access to systems.",
+                    "qas": [
+                        {
+                            "id": "105",
+                            "question": "What is phishing?",
+                            "answers": [
+                                {
+                                    "text": "a type of cyberattack where attackers impersonate legitimate entities to trick individuals into providing sensitive information",
+                                    "answer_start": 12
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "106",
+                            "question": "How do phishing attacks typically occur?",
+                            "answers": [
+                                {
+                                    "text": "through deceptive emails, fake websites, or fraudulent phone calls",
+                                    "answer_start": 220
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "107",
+                            "question": "What do attackers aim to obtain through phishing?",
+                            "answers": [
+                                {
+                                    "text": "sensitive information, such as passwords or credit card details",
+                                    "answer_start": 118
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "108",
+                            "question": "What is spear phishing?",
+                            "answers": [
+                                {
+                                    "text": "a more targeted form of phishing",
+                                    "answer_start": 0
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "109",
+                            "question": "How does spear phishing differ from regular phishing?",
+                            "answers": [
+                                {
+                                    "text": "attackers customize their messages to a specific individual or organization",
+                                    "answer_start": 91
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "110",
+                            "question": "What can phishing lead to?",
+                            "answers": [
+                                {
+                                    "text": "significant financial losses, identity theft, and unauthorized access to systems",
+                                    "answer_start": 463
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "111",
+                            "question": "What types of methods do phishing attacks use?",
+                            "answers": [
+                                {
+                                    "text": "deceptive emails, fake websites, or fraudulent phone calls",
+                                    "answer_start": 220
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Shoulder surfing is a technique used by attackers to gain unauthorized access to confidential information by observing individuals' screens or physical documents. This attack usually occurs in public places, such as coffee shops, airports, or public transportation, where people use laptops, smartphones, or write on paper with sensitive information. Attackers may use binoculars or simply position themselves to observe what the victim is doing. To prevent shoulder surfing, individuals should be aware of their surroundings and take precautions like using privacy screens or shielding their screens from others.",
+                    "qas": [
+                        {
+                            "id": "112",
+                            "question": "What is shoulder surfing?",
+                            "answers": [
+                                {
+                                    "text": "a technique used by attackers to gain unauthorized access to confidential information by observing individuals' screens or physical documents",
+                                    "answer_start": 20
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "113",
+                            "question": "How do attackers use shoulder surfing to gain unauthorized access?",
+                            "answers": [
+                                {
+                                    "text": "by observing individuals' screens or physical documents",
+                                    "answer_start": 109
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "114",
+                            "question": "Where do shoulder surfing attacks typically occur?",
+                            "answers": [
+                                {
+                                    "text": "in public places, such as coffee shops, airports, or public transportation",
+                                    "answer_start": 250
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "115",
+                            "question": "What tools might attackers use in shoulder surfing?",
+                            "answers": [
+                                {
+                                    "text": "binoculars or simply positioning themselves to observe",
+                                    "answer_start": 369
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "116",
+                            "question": "How can individuals prevent shoulder surfing?",
+                            "answers": [
+                                {
+                                    "text": "by being aware of surroundings and using privacy screens or shielding screens from others",
+                                    "answer_start": 513
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Vishing (voice phishing) involves using phone calls or voice messages to trick individuals into revealing sensitive information such as bank details, credit card numbers, or passwords. Attackers may pose as legitimate organizations such as banks, government agencies, or tech support. They often create a sense of urgency, such as claiming suspicious activity on an account or offering a prize, to pressure individuals into disclosing personal information. To protect against vishing, individuals should never share personal details over the phone unless they are sure of the caller's identity.",
+                    "qas": [
+                        {
+                            "id": "117",
+                            "question": "What is vishing?",
+                            "answers": [
+                                {
+                                    "text": "voice phishing, which involves using phone calls or voice messages to trick individuals into revealing sensitive information",
+                                    "answer_start": 8
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "118",
+                            "question": "What types of information do attackers seek in vishing attacks?",
+                            "answers": [
+                                {
+                                    "text": "bank details, credit card numbers, or passwords",
+                                    "answer_start": 141
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "119",
+                            "question": "Who may attackers impersonate in vishing?",
+                            "answers": [
+                                {
+                                    "text": "legitimate organizations such as banks, government agencies, or tech support",
+                                    "answer_start": 207
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "120",
+                            "question": "How do attackers create urgency in vishing?",
+                            "answers": [
+                                {
+                                    "text": "by claiming suspicious activity or offering a prize",
+                                    "answer_start": 331
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "121",
+                            "question": "How can individuals protect themselves from vishing?",
+                            "answers": [
+                                {
+                                    "text": "by never sharing personal details over the phone unless sure of the caller's identity",
+                                    "answer_start": 40
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Vishing (voice phishing) involves using phone calls or voice messages to trick individuals into revealing sensitive information such as bank details, credit card numbers, or passwords. Attackers may pose as legitimate organizations such as banks, government agencies, or tech support. They often create a sense of urgency, such as claiming suspicious activity on an account or offering a prize, to pressure individuals into disclosing personal information. To protect against vishing, individuals should never share personal details over the phone unless they are sure of the caller's identity.",
+                    "qas": [
+                        {
+                            "id": "122",
+                            "question": "What is vishing?",
+                            "answers": [
+                                {
+                                    "text": "voice phishing, which involves using phone calls or voice messages to trick individuals into revealing sensitive information",
+                                    "answer_start": 8
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "123",
+                            "question": "What types of information do attackers seek in vishing attacks?",
+                            "answers": [
+                                {
+                                    "text": "bank details, credit card numbers, or passwords",
+                                    "answer_start": 141
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "124",
+                            "question": "Who may attackers impersonate in vishing?",
+                            "answers": [
+                                {
+                                    "text": "legitimate organizations such as banks, government agencies, or tech support",
+                                    "answer_start": 207
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "125",
+                            "question": "How do attackers create urgency in vishing?",
+                            "answers": [
+                                {
+                                    "text": "by claiming suspicious activity or offering a prize",
+                                    "answer_start": 331
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "126",
+                            "question": "How can individuals protect themselves from vishing?",
+                            "answers": [
+                                {
+                                    "text": "by never sharing personal details over the phone unless sure of the caller's identity",
+                                    "answer_start": 40
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Whaling is a type of phishing attack specifically targeting high-profile individuals, such as CEOs, executives, or business leaders, with personalized and convincing attacks. Attackers in whaling scams often craft messages that appear to be from trusted sources, such as colleagues, board members, or regulatory bodies. These messages are designed to trick the victim into revealing sensitive information or authorizing fraudulent transactions. The goal of whaling is typically financial gain or unauthorized access to confidential business information.",
+                    "qas": [
+                        {
+                            "id": "127",
+                            "question": "What is whaling?",
+                            "answers": [
+                                {
+                                    "text": "a type of phishing attack specifically targeting high-profile individuals",
+                                    "answer_start": 37
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "128",
+                            "question": "Who is typically targeted in whaling attacks?",
+                            "answers": [
+                                {
+                                    "text": "high-profile individuals, such as CEOs, executives, or business leaders",
+                                    "answer_start": 60
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "129",
+                            "question": "What types of messages do attackers use in whaling?",
+                            "answers": [
+                                {
+                                    "text": "messages that appear to be from trusted sources, such as colleagues or regulatory bodies",
+                                    "answer_start": 2
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "130",
+                            "question": "What is the goal of a whaling attack?",
+                            "answers": [
+                                {
+                                    "text": "financial gain or unauthorized access to confidential business information",
+                                    "answer_start": 393
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Dumpster diving is the practice of searching through discarded materials, such as trash or recycling bins, to find sensitive information or documents that could be used in cyberattacks. Cybercriminals may look for personal data, financial records, or corporate documents that were improperly disposed of. Dumpster diving poses a significant security risk because individuals and businesses often neglect to properly shred or destroy confidential materials before discarding them. To prevent dumpster diving, organizations and individuals should adopt proper disposal practices like shredding documents and securely deleting electronic files.",
+                    "qas": [
+                        {
+                            "id": "131",
+                            "question": "What is dumpster diving?",
+                            "answers": [
+                                {
+                                    "text": "the practice of searching through discarded materials, such as trash or recycling bins, to find sensitive information",
+                                    "answer_start": 16
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "132",
+                            "question": "What types of materials do attackers search for in dumpster diving?",
+                            "answers": [
+                                {
+                                    "text": "personal data, financial records, or corporate documents",
+                                    "answer_start": 140
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "133",
+                            "question": "Why is dumpster diving a security risk?",
+                            "answers": [
+                                {
+                                    "text": "because individuals and businesses often neglect to properly dispose of confidential materials",
+                                    "answer_start": 433
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "134",
+                            "question": "How can individuals prevent dumpster diving?",
+                            "answers": [
+                                {
+                                    "text": "by shredding documents and securely deleting electronic files",
+                                    "answer_start": 140
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Baiting is a social engineering technique that entices victims into downloading malicious software or revealing personal information by offering something enticing, like free software, music, or a prize. Attackers often use fake advertisements, websites, or emails to lure individuals into downloading malicious files or entering sensitive information. Baiting exploits human curiosity or greed. To protect against baiting, individuals should avoid clicking on suspicious links, downloading untrusted software, or providing personal information in response to unsolicited offers.",
+                    "qas": [
+                        {
+                            "id": "135",
+                            "question": "What is baiting?",
+                            "answers": [
+                                {
+                                    "text": "a social engineering technique that entices victims into downloading malicious software or revealing personal information",
+                                    "answer_start": 1
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "136",
+                            "question": "What do attackers offer in baiting to entice victims?",
+                            "answers": [
+                                {
+                                    "text": "something enticing, like free software, music, or a prize",
+                                    "answer_start": 90
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "137",
+                            "question": "How do attackers deliver baiting scams?",
+                            "answers": [
+                                {
+                                    "text": "through fake advertisements, websites, or emails",
+                                    "answer_start": 229
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "138",
+                            "question": "What does baiting exploit?",
+                            "answers": [
+                                {
+                                    "text": "human curiosity or greed",
+                                    "answer_start": 370
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "139",
+                            "question": "How can individuals protect themselves from baiting?",
+                            "answers": [
+                                {
+                                    "text": "by avoiding suspicious links, untrusted software, and unsolicited offers",
+                                    "answer_start": 461
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "SQL injection is a code injection technique that exploits vulnerabilities in an application's software by inserting malicious SQL queries into input fields. Attackers can manipulate the application's database, gaining unauthorized access to sensitive data, modifying records, or even deleting entire databases. SQL injection attacks can occur when user input is not properly validated or sanitized before being passed to the database. These attacks can have severe consequences, including data breaches, loss of data, or system compromise. To prevent SQL injection, developers should use prepared statements, parameterized queries, and proper input validation techniques.",
+                    "qas": [
+                        {
+                            "id": "140",
+                            "question": "What is SQL injection?",
+                            "answers": [
+                                {
+                                    "text": "a code injection technique that exploits vulnerabilities in an application's software by inserting malicious SQL queries into input fields",
+                                    "answer_start": 0
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "141",
+                            "question": "How does SQL injection exploit vulnerabilities in applications?",
+                            "answers": [
+                                {
+                                    "text": "by inserting malicious SQL queries into input fields that are not properly validated or sanitized",
+                                    "answer_start": 0
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "142",
+                            "question": "What can attackers gain access to through SQL injection?",
+                            "answers": [
+                                {
+                                    "text": "unauthorized access to sensitive data, modifying records, or even deleting entire databases",
+                                    "answer_start": 218
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "143",
+                            "question": "Why do SQL injection attacks occur?",
+                            "answers": [
+                                {
+                                    "text": "because user input is not properly validated or sanitized before being passed to the database",
+                                    "answer_start": 14
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "144",
+                            "question": "What are the consequences of SQL injection attacks?",
+                            "answers": [
+                                {
+                                    "text": "data breaches, loss of data, or system compromise",
+                                    "answer_start": 494
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "145",
+                            "question": "How can SQL injection attacks be prevented?",
+                            "answers": [
+                                {
+                                    "text": "by using prepared statements, parameterized queries, and proper input validation techniques",
+                                    "answer_start": 609
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Ransomware is a type of malicious software that encrypts a user's files or locks them out of their systems, demanding a ransom payment in exchange for restoring access. The malware typically spreads through phishing emails, malicious websites, or compromised software updates. Once the files are encrypted or the system is locked, the attacker demands payment, often in cryptocurrency, threatening to delete or publicly release the files if the ransom is not paid. Ransomware can target individuals, businesses, or even government organizations. To defend against ransomware, users should regularly back up their data, avoid suspicious links, and use strong security measures such as antivirus software and firewalls.",
+                    "qas": [
+                        {
+                            "id": "146",
+                            "question": "What is ransomware?",
+                            "answers": [
+                                {
+                                    "text": "a type of malicious software that encrypts a user's files or locks them out of their systems, demanding a ransom payment",
+                                    "answer_start": 1
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "147",
+                            "question": "How does ransomware typically spread?",
+                            "answers": [
+                                {
+                                    "text": "through phishing emails, malicious websites, or compromised software updates",
+                                    "answer_start": 247
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "148",
+                            "question": "What does ransomware do to a user's files or systems?",
+                            "answers": [
+                                {
+                                    "text": "encrypts files or locks systems, demanding a ransom payment in exchange for restoring access",
+                                    "answer_start": 1
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "149",
+                            "question": "What do attackers demand in exchange for restoring access in ransomware attacks?",
+                            "answers": [
+                                {
+                                    "text": "payment, often in cryptocurrency, threatening to delete or publicly release files if not paid",
+                                    "answer_start": 370
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "150",
+                            "question": "Who can be targeted by ransomware?",
+                            "answers": [
+                                {
+                                    "text": "individuals, businesses, or even government organizations",
+                                    "answer_start": 487
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "151",
+                            "question": "How can users protect themselves from ransomware?",
+                            "answers": [
+                                {
+                                    "text": "by regularly backing up data, avoiding suspicious links, and using strong security measures such as antivirus software and firewalls",
+                                    "answer_start": 1
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Penetration testing is a manual process where skilled professionals use tools and techniques to find vulnerabilities. Unlike automated tools, testers customize their approach based on the organizationâ€™s risks, often discovering unknown vulnerabilities. It can take days or weeks and is usually done annually, sometimes causing outages.",
+                    "qas": [
+                        {
+                            "id": "152",
+                            "question": "What is penetration testing?",
+                            "answers": [
+                                {
+                                    "text": "a manual process where skilled professionals use tools and techniques to find vulnerabilities",
+                                    "answer_start": 54
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "153",
+                            "question": "Who conducts penetration testing?",
+                            "answers": [
+                                {
+                                    "text": "skilled professionals",
+                                    "answer_start": 46
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "154",
+                            "question": "How is penetration testing different from automated tools?",
+                            "answers": [
+                                {
+                                    "text": "testers customize their approach based on the organizationâ€™s risks",
+                                    "answer_start": 150
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "155",
+                            "question": "How long does penetration testing usually take?",
+                            "answers": [
+                                {
+                                    "text": "it can take days or weeks",
+                                    "answer_start": 260
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "156",
+                            "question": "How often is penetration testing performed?",
+                            "answers": [
+                                {
+                                    "text": "usually done annually",
+                                    "answer_start": 286
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "157",
+                            "question": "Can penetration testing cause disruptions?",
+                            "answers": [
+                                {
+                                    "text": "yes, it may cause outages",
+                                    "answer_start": 327
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Vulnerability scanning is an automated process that identifies known vulnerabilities in systems. Itâ€™s faster than penetration testing and can be run frequently, aiming to detect vulnerabilities before attackers exploit them. However, it mainly finds known vulnerabilities and may miss new or complex ones.",
+                    "qas": [
+                        {
+                            "id": "158",
+                            "question": "What is vulnerability scanning?",
+                            "answers": [
+                                {
+                                    "text": "an automated process that identifies known vulnerabilities in systems",
+                                    "answer_start": 29
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "159",
+                            "question": "How is vulnerability scanning different from penetration testing?",
+                            "answers": [
+                                {
+                                    "text": "vulnerability scanning is automated and faster, while penetration testing is manual and customized",
+                                    "answer_start": 0
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "160",
+                            "question": "How often can vulnerability scanning be run?",
+                            "answers": [
+                                {
+                                    "text": "it can be run frequently",
+                                    "answer_start": 15
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "161",
+                            "question": "What is the goal of vulnerability scanning?",
+                            "answers": [
+                                {
+                                    "text": "to detect vulnerabilities before they can be exploited",
+                                    "answer_start": 69
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "162",
+                            "question": "What types of vulnerabilities does vulnerability scanning detect?",
+                            "answers": [
+                                {
+                                    "text": "known vulnerabilities",
+                                    "answer_start": 69
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "163",
+                            "question": "Can vulnerability scanning uncover complex vulnerabilities?",
+                            "answers": [
+                                {
+                                    "text": "no, it may miss new or complex vulnerabilities",
+                                    "answer_start": 69
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "In 2024, cyberattacks targeting the financial sector saw shifts in tactics, with AI-powered tools enhancing phishing, manipulating ads, and bypassing biometric security. Criminals used AI to open accounts with stolen data, impersonate victims, and bypass KYC procedures. For example, Brazilian criminals used AI to create fake faces and bypass biometric checks to open bank accounts for money laundering.",
+                    "qas": [
+                        {
+                            "id": "164",
+                            "question": "What notable trend emerged in cyberattacks targeting the financial sector in 2024?",
+                            "answers": [
+                                {
+                                    "text": "the rise of AI-powered cyberattacks",
+                                    "answer_start": 9
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "165",
+                            "question": "How were AI-powered tools used in cyberattacks on the financial sector?",
+                            "answers": [
+                                {
+                                    "text": "to enhance phishing, manipulate ads, and bypass biometric security",
+                                    "answer_start": 150
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "166",
+                            "question": "What procedures did criminals bypass using AI in these attacks?",
+                            "answers": [
+                                {
+                                    "text": "KYC (Know Your Customer) procedures",
+                                    "answer_start": 259
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "167",
+                            "question": "How did Brazilian criminals use AI in 2024 cyberattacks?",
+                            "answers": [
+                                {
+                                    "text": "to create fake faces and bypass biometric checks to open bank accounts",
+                                    "answer_start": 150
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "168",
+                            "question": "What was the purpose of creating fake faces using AI in these attacks?",
+                            "answers": [
+                                {
+                                    "text": "for money laundering",
+                                    "answer_start": 271
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "In 2024, fraud targeting direct payment systems like PIX, FedNow, and UPI increased. Banking Trojans like GoPIX exploited these systems by intercepting payment data or altering transactions using clipboard monitoring. While FedNow hadnâ€™t seen major fraud, concerns about APP fraud persisted. The UPI system in India faced scams involving fraudulent payment requests and fake apps that tricked users and businesses into making loss-making transactions.",
+                    "qas": [
+                        {
+                            "id": "169",
+                            "question": "What payment systems were targeted by fraud in 2024?",
+                            "answers": [
+                                {
+                                    "text": "PIX, FedNow, and UPI",
+                                    "answer_start": 53
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "170",
+                            "question": "How did banking Trojans like GoPIX exploit direct payment systems?",
+                            "answers": [
+                                {
+                                    "text": "by intercepting payment data or altering transactions using clipboard monitoring",
+                                    "answer_start": 139
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "171",
+                            "question": "What concerns remained about the FedNow system in 2024?",
+                            "answers": [
+                                {
+                                    "text": "concerns about authorized push payment (APP) fraud",
+                                    "answer_start": 32
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "172",
+                            "question": "What type of fraud increased in the UPI system in India?",
+                            "answers": [
+                                {
+                                    "text": "scams involving fraudulent payment requests",
+                                    "answer_start": 32
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "173",
+                            "question": "How did fake apps contribute to fraud in the UPI system?",
+                            "answers": [
+                                {
+                                    "text": "by tricking users and businesses into making loss-making transactions",
+                                    "answer_start": 177
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "In 2024, ransomware groups increasingly targeted high-value sectors like large banks and financial institutions. Ransom demands rose, with banks accounting for a significant portion of ransomware attacks. Operators refined their tactics, focusing on selective targeting while still attacking other sectors like government and healthcare. This shift showed cybercriminals were prioritizing sectors with higher potential payouts.",
+                    "qas": [
+                        {
+                            "id": "174",
+                            "question": "What sectors did ransomware groups target in 2024?",
+                            "answers": [
+                                {
+                                    "text": "large banks and financial institutions",
+                                    "answer_start": 73
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "175",
+                            "question": "How did ransomware operators change their tactics in 2024?",
+                            "answers": [
+                                {
+                                    "text": "by focusing on selective targeting",
+                                    "answer_start": 238
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "176",
+                            "question": "What percentage of ransomware attacks in 2024 targeted banks?",
+                            "answers": [
+                                {
+                                    "text": "banks accounted for a significant portion",
+                                    "answer_start": 162
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "177",
+                            "question": "Which other sectors did ransomware groups continue to target?",
+                            "answers": [
+                                {
+                                    "text": "government and healthcare",
+                                    "answer_start": 311
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "178",
+                            "question": "Why did ransomware groups shift focus toward high-value sectors?",
+                            "answers": [
+                                {
+                                    "text": "because these sectors have a higher potential for large payouts",
+                                    "answer_start": 409
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "In 2024, open-source backdoored packages became a major concern, especially in Linux environments. Backdoors like the XZ Backdoor were found in popular open-source software, increasing risks for developers and organizations. At the same time, zero-day vulnerabilities became a preferred attack method, with zero-day exploits outpacing first-day exploits in usage by cybercriminals.",
+                    "qas": [
+                        {
+                            "id": "179",
+                            "question": "What was a major concern in open-source software in 2024?",
+                            "answers": [
+                                {
+                                    "text": "the exploitation of open-source backdoored packages",
+                                    "answer_start": 9
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "180",
+                            "question": "Which backdoor was found in popular open-source software?",
+                            "answers": [
+                                {
+                                    "text": "the XZ Backdoor",
+                                    "answer_start": 114
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "181",
+                            "question": "What risk did backdoored open-source packages pose in 2024?",
+                            "answers": [
+                                {
+                                    "text": "they increased the risk for developers and organizations",
+                                    "answer_start": 195
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "182",
+                            "question": "What type of vulnerabilities were commonly exploited in 2024?",
+                            "answers": [
+                                {
+                                    "text": "zero-day vulnerabilities",
+                                    "answer_start": 243
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "183",
+                            "question": "How did zero-day exploits compare to first-day exploits in 2024?",
+                            "answers": [
+                                {
+                                    "text": "zero-day exploits outpaced first-day exploits in usage",
+                                    "answer_start": 243
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "In 2024, cybercriminals increasingly exploited misconfigured devices and services. A major example was the EMERALDWHALE operation, where attackers targeted misconfigured Git setups to steal cloud service credentials and access private repositories. This highlighted the dangers of improper cloud configurations, emphasizing the need for regular security audits and configuration management.",
+                    "qas": [
+                        {
+                            "id": "184",
+                            "question": "What was a major cybersecurity concern in 2024?",
+                            "answers": [
+                                {
+                                    "text": "the exploitation of misconfigured devices and services",
+                                    "answer_start": 47
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "185",
+                            "question": "What was the EMERALDWHALE operation targeting?",
+                            "answers": [
+                                {
+                                    "text": "misconfigured Git setups",
+                                    "answer_start": 47
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "186",
+                            "question": "What did attackers steal during the EMERALDWHALE operation?",
+                            "answers": [
+                                {
+                                    "text": "cloud service credentials and private repositories",
+                                    "answer_start": 73
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "187",
+                            "question": "What did the EMERALDWHALE operation highlight about cloud environments?",
+                            "answers": [
+                                {
+                                    "text": "the dangers of improper cloud configurations",
+                                    "answer_start": 270
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "188",
+                            "question": "What is crucial to prevent unauthorized access in cloud environments?",
+                            "answers": [
+                                {
+                                    "text": "regular security audits and configuration management",
+                                    "answer_start": 337
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Cybersecurity is crucial for protecting computer systems and sensitive information from threats like theft and fraud. Protective measures for hardware include serial numbers, locks, and alarms. Protecting information involves tactics like tracking user access, assigning passwords, and encrypting data. Password tracking systems log user activities, and encryption ensures data can only be read by authorized users with the correct decryption key.",
+                    "qas": [
+                        {
+                            "id": "189",
+                            "question": "What is the purpose of cybersecurity?",
+                            "answers": [
+                                {
+                                    "text": "to protect computer systems and sensitive information from threats like theft and fraud",
+                                    "answer_start": 71
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "190",
+                            "question": "What are common protective measures for computer hardware?",
+                            "answers": [
+                                {
+                                    "text": "serial numbers, locks, and alarms",
+                                    "answer_start": 159
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "191",
+                            "question": "What tactics are used to protect information and system access?",
+                            "answers": [
+                                {
+                                    "text": "tracking user access, assigning passwords, and encrypting data",
+                                    "answer_start": 239
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "192",
+                            "question": "What do password tracking systems log?",
+                            "answers": [
+                                {
+                                    "text": "user activities, including the files accessed under specific passwords",
+                                    "answer_start": 271
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "193",
+                            "question": "What does encryption ensure about data?",
+                            "answers": [
+                                {
+                                    "text": "data can only be read by authorized users with the correct decryption key",
+                                    "answer_start": 398
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "The introduction of modems and personal computers in the late 20th century increased system vulnerabilities, particularly through hackers. The growth of the Internet in the late 1990s and early 2000s made cybersecurity a widespread concern, enabling malicious actors to access systems remotely. This led to continuous efforts to develop advanced security techniques, although the sophistication of cybercrimes has evolved, creating ongoing risks.",
+                    "qas": [
+                        {
+                            "id": "194",
+                            "question": "What increased system vulnerabilities in the late 20th century?",
+                            "answers": [
+                                {
+                                    "text": "the introduction of modems and personal computers",
+                                    "answer_start": 4
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "195",
+                            "question": "What made cybersecurity a widespread concern in the late 1990s and early 2000s?",
+                            "answers": [
+                                {
+                                    "text": "the growth of the Internet",
+                                    "answer_start": 143
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "196",
+                            "question": "How did the growth of the Internet impact cybersecurity?",
+                            "answers": [
+                                {
+                                    "text": "it enabled malicious actors to access systems remotely",
+                                    "answer_start": 250
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "197",
+                            "question": "What efforts were made in response to cyber threats?",
+                            "answers": [
+                                {
+                                    "text": "continuous efforts to develop advanced security techniques",
+                                    "answer_start": 307
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "198",
+                            "question": "What has evolved alongside the development of security techniques?",
+                            "answers": [
+                                {
+                                    "text": "the sophistication of cybercrimes",
+                                    "answer_start": 380
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Key threats to computer security include data theft (e.g., stealing military secrets), vandalism (such as viruses destroying data), fraud (e.g., embezzlement), and privacy breaches (e.g., illegal access to financial or medical data). These risks highlight the importance of cybersecurity practices, including secure user authentication and data encryption, to protect systems and information.",
+                    "qas": [
+                        {
+                            "id": "199",
+                            "question": "What are key threats to computer security?",
+                            "answers": [
+                                {
+                                    "text": "data theft, vandalism, fraud, and privacy breaches",
+                                    "answer_start": 87
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "200",
+                            "question": "What are examples of data theft?",
+                            "answers": [
+                                {
+                                    "text": "stealing military secrets",
+                                    "answer_start": 59
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "201",
+                            "question": "What is an example of vandalism in computer security?",
+                            "answers": [
+                                {
+                                    "text": "viruses destroying data",
+                                    "answer_start": 41
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "202",
+                            "question": "What is a form of fraud in computer security?",
+                            "answers": [
+                                {
+                                    "text": "embezzlement",
+                                    "answer_start": 145
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "203",
+                            "question": "What practices are important to protect systems and information?",
+                            "answers": [
+                                {
+                                    "text": "secure user authentication and data encryption",
+                                    "answer_start": 309
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Cyberattacks are a significant threat to digital systems and information. These malicious efforts aim to steal sensitive data, cause disruption, or damage infrastructure. The most common cyberattacks are financially motivated, targeting individuals or organizations for money, intellectual property, or credentials. Destructive cyberattacks can disable essential systems like industrial machinery, public services, and power grids. The motivations vary, but the goal is often to exploit vulnerabilities for personal gain or control over critical infrastructure.",
+                    "qas": [
+                        {
+                            "id": "204",
+                            "question": "What is the primary threat posed by cyberattacks?",
+                            "answers": [
+                                {
+                                    "text": "the integrity of digital systems and information",
+                                    "answer_start": 41
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "205",
+                            "question": "What are the most common motivations behind cyberattacks?",
+                            "answers": [
+                                {
+                                    "text": "financial gain",
+                                    "answer_start": 516
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "206",
+                            "question": "What do criminals often target in financially motivated cyberattacks?",
+                            "answers": [
+                                {
+                                    "text": "money, intellectual property, or credentials",
+                                    "answer_start": 277
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "207",
+                            "question": "What systems can be disabled by destructive cyberattacks?",
+                            "answers": [
+                                {
+                                    "text": "industrial machinery, public services, and power grids",
+                                    "answer_start": 376
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "208",
+                            "question": "What is the ultimate goal of most cyberattacks?",
+                            "answers": [
+                                {
+                                    "text": "to exploit vulnerabilities for personal gain or control over critical infrastructure",
+                                    "answer_start": 155
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "The stages of a cyberattack unfold in phases: reconnaissance, where attackers gather intelligence and look for weak points; delivery, where the attacker breaches the system using phishing, USB drives, or malicious websites; breaching, where the attacker establishes a presence in the system; and the final attack phase, where data is exfiltrated, malicious software is installed, or system operations are disrupted. These phases are stealthy, aiming to avoid detection and maximize damage.",
+                    "qas": [
+                        {
+                            "id": "209",
+                            "question": "What is the first stage of a cyberattack?",
+                            "answers": [
+                                {
+                                    "text": "reconnaissance",
+                                    "answer_start": 46
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "210",
+                            "question": "How do attackers typically deliver their attack during the delivery phase?",
+                            "answers": [
+                                {
+                                    "text": "using phishing emails, infected USB drives, or malicious websites",
+                                    "answer_start": 204
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "211",
+                            "question": "What happens during the breaching phase of a cyberattack?",
+                            "answers": [
+                                {
+                                    "text": "the attacker establishes a presence in the system",
+                                    "answer_start": 68
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "212",
+                            "question": "What occurs in the final phase of a cyberattack?",
+                            "answers": [
+                                {
+                                    "text": "exfiltrating data, installing malicious software, or disrupting operations",
+                                    "answer_start": 390
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "213",
+                            "question": "What is the aim of the attacker throughout the cyberattack phases?",
+                            "answers": [
+                                {
+                                    "text": "to avoid detection while maximizing damage",
+                                    "answer_start": 459
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Cybercrime refers to illegal activities using computers, such as fraud, identity theft, trafficking in child pornography, intellectual property theft, and privacy violations. As the Internet grew central to commerce, entertainment, and government, cybercrime expanded, affecting individuals, corporations, and governments. Cybercrime now extends traditional crimes like fraud into the online space, targeting virtual identities and personal information.",
+                    "qas": [
+                        {
+                            "id": "214",
+                            "question": "What does cybercrime refer to?",
+                            "answers": [
+                                {
+                                    "text": "the use of computers to commit illegal activities",
+                                    "answer_start": 21
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "215",
+                            "question": "What types of illegal activities are included in cybercrime?",
+                            "answers": [
+                                {
+                                    "text": "fraud, identity theft, trafficking in child pornography, intellectual property theft, and privacy violations",
+                                    "answer_start": 65
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "216",
+                            "question": "How did the Internet contribute to the growth of cybercrime?",
+                            "answers": [
+                                {
+                                    "text": "it became central to commerce, entertainment, and government",
+                                    "answer_start": 207
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "217",
+                            "question": "What makes cybercrime different from traditional crimes?",
+                            "answers": [
+                                {
+                                    "text": "it extends traditional crimes into the online space",
+                                    "answer_start": 338
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "218",
+                            "question": "What does cybercrime target in the online space?",
+                            "answers": [
+                                {
+                                    "text": "virtual identities and personal information",
+                                    "answer_start": 409
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Cybercrime spans from breaches of personal and corporate privacy, such as data manipulation and identity theft, to transaction-based crimes like fraud and digital piracy. At the extreme, cyberterrorism involves disrupting national infrastructures and public safety through cyberattacks like hacking and denial of service. Advanced technologies like spyware, such as Pegasus, have blurred the lines between law enforcement and cybercrime, raising ethical and legal concerns.",
+                    "qas": [
+                        {
+                            "id": "219",
+                            "question": "What activities are included in the spectrum of cybercrime?",
+                            "answers": [
+                                {
+                                    "text": "data manipulation, identity theft, fraud, and digital piracy",
+                                    "answer_start": 79
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "220",
+                            "question": "What is cyberterrorism?",
+                            "answers": [
+                                {
+                                    "text": "the deliberate disruption of national infrastructures and public safety",
+                                    "answer_start": 231
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "221",
+                            "question": "What types of cyberattacks are associated with cyberterrorism?",
+                            "answers": [
+                                {
+                                    "text": "hacking and denial of service attacks",
+                                    "answer_start": 291
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "222",
+                            "question": "How has spyware like Pegasus blurred the lines between law enforcement and cybercrime?",
+                            "answers": [
+                                {
+                                    "text": "it is used for covertly tracking individuals without their knowledge",
+                                    "answer_start": 105
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "223",
+                            "question": "What ethical and legal issues arise from the use of spyware?",
+                            "answers": [
+                                {
+                                    "text": "it raises significant ethical and legal issues",
+                                    "answer_start": 446
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Data Loss Prevention (DLP) is a cybersecurity solution designed to protect sensitive data at rest, in transit, and on endpoints. It reduces the risk of data theft or unauthorized exposure by classifying regulated, confidential, and business-critical data, while identifying policy violations based on frameworks like HIPAA, PCI DSS, or GDPR.",
+                    "qas": [
+                        {
+                            "id": "224",
+                            "question": "What is the purpose of Data Loss Prevention (DLP)?",
+                            "answers": [
+                                {
+                                    "text": "to protect sensitive data",
+                                    "answer_start": 0
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "225",
+                            "question": "Where does DLP protect sensitive data?",
+                            "answers": [
+                                {
+                                    "text": "at rest, in transit, and on endpoints",
+                                    "answer_start": 102
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "226",
+                            "question": "How does DLP help reduce the risk of data theft?",
+                            "answers": [
+                                {
+                                    "text": "by classifying data and identifying policy violations",
+                                    "answer_start": 191
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "227",
+                            "question": "What types of data does DLP classify?",
+                            "answers": [
+                                {
+                                    "text": "regulated, confidential, and business-critical data",
+                                    "answer_start": 203
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "228",
+                            "question": "Which compliance frameworks does DLP help identify violations for?",
+                            "answers": [
+                                {
+                                    "text": "HIPAA, PCI DSS, or GDPR",
+                                    "answer_start": 317
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "DLP addresses three primary objectives: preventing data loss, ensuring data protection, and maintaining regulatory compliance. It also helps with insider threats, securing office data, user and entity behavior analysis, and protecting against advanced threats. By implementing DLP, organizations can safeguard sensitive information and mitigate various security risks.",
+                    "qas": [
+                        {
+                            "id": "229",
+                            "question": "What are the three primary objectives of DLP?",
+                            "answers": [
+                                {
+                                    "text": "preventing data loss, ensuring data protection, and maintaining regulatory compliance",
+                                    "answer_start": 92
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "230",
+                            "question": "How does DLP help with insider threats?",
+                            "answers": [
+                                {
+                                    "text": "by helping remediate insider threats",
+                                    "answer_start": 146
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "231",
+                            "question": "What types of data does DLP secure?",
+                            "answers": [
+                                {
+                                    "text": "office data",
+                                    "answer_start": 51
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "232",
+                            "question": "How does DLP contribute to regulatory compliance?",
+                            "answers": [
+                                {
+                                    "text": "by ensuring compliance with regulatory frameworks",
+                                    "answer_start": 62
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "233",
+                            "question": "What are the additional cybersecurity challenges DLP helps address?",
+                            "answers": [
+                                {
+                                    "text": "insider threats, securing office data, user and entity behavior analysis, and protecting against advanced threats",
+                                    "answer_start": 51
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Social engineers are individuals who exploit human psychology to gain unauthorized access to systems, data, or resources. They manipulate or deceive people instead of using technical hacking methods. By gaining trust or stealing credentials, they infiltrate computer networks or data stores.",
+                    "qas": [
+                        {
+                            "id": "234",
+                            "question": "What do social engineers exploit to gain unauthorized access?",
+                            "answers": [
+                                {
+                                    "text": "Human psychology",
+                                    "answer_start": 45
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "235",
+                            "question": "How do social engineers manipulate people?",
+                            "answers": [
+                                {
+                                    "text": "By manipulating or deceiving people",
+                                    "answer_start": 149
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "236",
+                            "question": "What is the primary method social engineers use instead of technical hacking?",
+                            "answers": [
+                                {
+                                    "text": "By manipulating or deceiving people",
+                                    "answer_start": 149
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "237",
+                            "question": "How do social engineers infiltrate computer networks or data stores?",
+                            "answers": [
+                                {
+                                    "text": "By gaining trust or stealing credentials",
+                                    "answer_start": 203
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "238",
+                            "question": "What can social engineers steal to gain unauthorized access?",
+                            "answers": [
+                                {
+                                    "text": "Credentials",
+                                    "answer_start": 229
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Common tactics used by social engineers include exploiting the natural helpfulness of people, preying on their weaknesses, or using psychological triggers like urgency or fear. For example, they might pose as an IT technician or another trusted authority figure, creating a fabricated emergency that requires immediate access to sensitive systems. They may also exploit personal characteristics such as vanity, authority, or greed, which they often glean through social media or online research.",
+                    "qas": [
+                        {
+                            "id": "239",
+                            "question": "What are common tactics used by social engineers?",
+                            "answers": [
+                                {
+                                    "text": "Exploiting helpfulness, preying on weaknesses, using psychological triggers",
+                                    "answer_start": 48
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "240",
+                            "question": "How do social engineers exploit people's natural tendencies?",
+                            "answers": [
+                                {
+                                    "text": "By exploiting the natural helpfulness of people",
+                                    "answer_start": 48
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "241",
+                            "question": "What psychological triggers do social engineers use?",
+                            "answers": [
+                                {
+                                    "text": "Urgency or fear",
+                                    "answer_start": 123
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "242",
+                            "question": "What roles might social engineers pose as to gain access to sensitive systems?",
+                            "answers": [
+                                {
+                                    "text": "They might pose as an IT technician or another trusted authority figure",
+                                    "answer_start": 215
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "243",
+                            "question": "What personal characteristics do social engineers exploit?",
+                            "answers": [
+                                {
+                                    "text": "Vanity, authority, or greed",
+                                    "answer_start": 245
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "244",
+                            "question": "How do social engineers gather information about their targets?",
+                            "answers": [
+                                {
+                                    "text": "Through social media or online research",
+                                    "answer_start": 23
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Social engineering attacks can manifest in various forms, such as phishing emails designed to trick recipients into opening malicious attachments, phone calls where criminals impersonate trusted colleagues or company representatives, or even scare tactics to convince victims to install malware on their devices. These attacks highlight the importance of awareness and caution when interacting with unfamiliar sources, whether online or offline, to avoid falling victim to these deceptive tactics.",
+                    "qas": [
+                        {
+                            "id": "245",
+                            "question": "What are some common forms of social engineering attacks?",
+                            "answers": [
+                                {
+                                    "text": "Phishing emails, phone calls, scare tactics",
+                                    "answer_start": 66
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "246",
+                            "question": "How do phishing emails work as a social engineering attack?",
+                            "answers": [
+                                {
+                                    "text": "By tricking recipients into opening malicious attachments",
+                                    "answer_start": 100
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "247",
+                            "question": "How do criminals impersonate trusted figures in social engineering attacks?",
+                            "answers": [
+                                {
+                                    "text": "By impersonating trusted colleagues or company representatives",
+                                    "answer_start": 195
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "248",
+                            "question": "What scare tactics might social engineers use in attacks?",
+                            "answers": [
+                                {
+                                    "text": "Convincing victims to install malware on their devices",
+                                    "answer_start": 268
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "249",
+                            "question": "What is crucial to avoid falling victim to social engineering attacks?",
+                            "answers": [
+                                {
+                                    "text": "Awareness and caution when interacting with unfamiliar sources",
+                                    "answer_start": 355
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "One of Meta's key security initiatives is business verification, requiring businesses to confirm their identities before accessing certain tools. This helps ensure that users can trust the brands they interact with. Additionally, Meta strengthens account security by requiring large global business users to enable two-factor authentication (2FA) for accessing business tools. This measure helps prevent unauthorized access and activities, such as adding or removing users or creating ads. Meta also uses machine learning to detect suspicious behavior, such as unusual spending in advertising campaigns or logins from unexpected locations, and swiftly investigates potential threats. Automated systems like account logouts after inactivity further enhance security.",
+                    "qas": [
+                        {
+                            "id": "250",
+                            "question": "What is Meta's business verification process?",
+                            "answers": [
+                                {
+                                    "text": "Requiring businesses to confirm their identities before accessing certain tools",
+                                    "answer_start": 75
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "251",
+                            "question": "Why does Meta require two-factor authentication (2FA) for large business users?",
+                            "answers": [
+                                {
+                                    "text": "To prevent unauthorized access and activities like adding or removing users or creating ads",
+                                    "answer_start": 404
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "252",
+                            "question": "How does Meta use machine learning in its security measures?",
+                            "answers": [
+                                {
+                                    "text": "By detecting suspicious behavior like unusual spending or logins from unexpected locations",
+                                    "answer_start": 264
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "253",
+                            "question": "What suspicious behaviors does Meta's machine learning detect?",
+                            "answers": [
+                                {
+                                    "text": "Unusual spending in advertising campaigns or logins from unexpected locations",
+                                    "answer_start": 581
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "254",
+                            "question": "How does Meta prevent unauthorized access to business tools?",
+                            "answers": [
+                                {
+                                    "text": "By requiring large global business users to enable two-factor authentication (2FA)",
+                                    "answer_start": 326
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "255",
+                            "question": "What automated system does Meta use to enhance security?",
+                            "answers": [
+                                {
+                                    "text": "Account logouts after inactivity",
+                                    "answer_start": 247
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "Meta encourages businesses to adopt best practices for securing their accounts, such as enabling 2FA, monitoring ad spending, and setting up notifications for suspicious activity. The company continues to innovate, addressing evolving cyber threats and reinforcing security measures to protect business connections with customers in a complex digital landscape.",
+                    "qas": [
+                        {
+                            "id": "256",
+                            "question": "What best practices does Meta encourage businesses to adopt for securing their accounts?",
+                            "answers": [
+                                {
+                                    "text": "Enabling 2FA, monitoring ad spending, and setting up notifications for suspicious activity",
+                                    "answer_start": 141
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "257",
+                            "question": "How does Meta help businesses monitor suspicious activity?",
+                            "answers": [
+                                {
+                                    "text": "By setting up notifications for suspicious activity",
+                                    "answer_start": 130
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "258",
+                            "question": "Why is Meta continuing to innovate its security measures?",
+                            "answers": [
+                                {
+                                    "text": "To address evolving cyber threats",
+                                    "answer_start": 226
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "259",
+                            "question": "What is Meta's focus in securing business connections in a digital landscape?",
+                            "answers": [
+                                {
+                                    "text": "To protect business connections with customers in a complex digital landscape",
+                                    "answer_start": 303
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "The Snowflake data breach highlights critical cybersecurity issues that allowed attackers to exploit vulnerabilities such as the lack of multi-factor authentication (MFA), open network ACLs, and failure to enforce password changes. These gaps enabled attackers to use previously compromised credentials to gain unauthorized access. The breach underscores the importance of proactive security measures like MFA and threat intelligence, which can help detect and mitigate cyberattacks before they escalate. It also reveals the growing sophistication of cybercriminals who bypass traditional security measures such as firewalls, intrusion detection systems (IDS), and endpoint protections.",
+                    "qas": [
+                        {
+                            "id": "260",
+                            "question": "What vulnerabilities were exploited in the Snowflake data breach?",
+                            "answers": [
+                                {
+                                    "text": "Lack of multi-factor authentication (MFA), open network ACLs, and failure to enforce password changes",
+                                    "answer_start": 150
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "261",
+                            "question": "What security measures were lacking in the Snowflake data breach?",
+                            "answers": [
+                                {
+                                    "text": "Multi-factor authentication (MFA), proper network ACL configurations, and password change enforcement",
+                                    "answer_start": 150
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "262",
+                            "question": "How did attackers gain unauthorized access in the Snowflake breach?",
+                            "answers": [
+                                {
+                                    "text": "By using previously compromised credentials",
+                                    "answer_start": 268
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "263",
+                            "question": "What does the Snowflake breach highlight about the importance of security measures?",
+                            "answers": [
+                                {
+                                    "text": "The importance of proactive security measures like MFA and threat intelligence",
+                                    "answer_start": 359
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "264",
+                            "question": "What sophisticated tactics did cybercriminals use in the Snowflake breach?",
+                            "answers": [
+                                {
+                                    "text": "They bypassed traditional security measures such as firewalls, intrusion detection systems (IDS), and endpoint protections",
+                                    "answer_start": 0
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "The breach was linked to info stealer malware, which infiltrated systems through phishing campaigns and malicious websites. These tools are designed to steal sensitive data, including login credentials and financial information, and can bypass conventional defenses. Once infected, systems communicate with Command and Control (C&C) servers to exfiltrate data and maintain persistence. The importance of identifying and monitoring C&C servers is emphasized, as they provide valuable insights into adversary activities. Proactive solutions like Iron Radar track info stealer frameworks, enabling earlier detection and prevention of attacks.",
+                    "qas": [
+                        {
+                            "id": "265",
+                            "question": "How did the info stealer malware infiltrate systems in the breach?",
+                            "answers": [
+                                {
+                                    "text": "Through phishing campaigns and malicious websites",
+                                    "answer_start": 73
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "266",
+                            "question": "What type of data does info stealer malware typically steal?",
+                            "answers": [
+                                {
+                                    "text": "Login credentials and financial information",
+                                    "answer_start": 190
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "267",
+                            "question": "What role do Command and Control (C&C) servers play in the malware infection?",
+                            "answers": [
+                                {
+                                    "text": "C&C servers exfiltrate stolen data and maintain persistence",
+                                    "answer_start": 344
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "268",
+                            "question": "Why is it important to identify and monitor C&C servers?",
+                            "answers": [
+                                {
+                                    "text": "They provide valuable insights into adversary activities",
+                                    "answer_start": 466
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "269",
+                            "question": "How does Iron Radar help in preventing attacks?",
+                            "answers": [
+                                {
+                                    "text": "Iron Radar tracks info stealer frameworks, enabling earlier detection and prevention of attacks",
+                                    "answer_start": 25
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "While traditional reactive responses, such as using indicators of compromise (IoCs), help identify threats post-compromise, they are not sufficient to prevent breaches. The growing importance of Collective Defense and Proactive Threat Intelligence is highlighted, as these approaches enable organizations to share threat data and enhance their defenses before attacks occur. Iron Netâ€™s proactive model focuses on early detection through community collaboration, ensuring that attacks against one organization are mitigated across the entire community.",
+                    "qas": [
+                        {
+                            "id": "270",
+                            "question": "Why are traditional reactive responses like IoCs insufficient in preventing breaches?",
+                            "answers": [
+                                {
+                                    "text": "They help identify threats post-compromise, but cannot prevent breaches",
+                                    "answer_start": 66
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "271",
+                            "question": "What does Collective Defense and Proactive Threat Intelligence help organizations achieve?",
+                            "answers": [
+                                {
+                                    "text": "They enable organizations to share threat data and enhance defenses before attacks occur",
+                                    "answer_start": 291
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "272",
+                            "question": "How does Iron Netâ€™s proactive model detect attacks?",
+                            "answers": [
+                                {
+                                    "text": "Through early detection via community collaboration",
+                                    "answer_start": 419
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "273",
+                            "question": "What is the benefit of community collaboration in Iron Netâ€™s model?",
+                            "answers": [
+                                {
+                                    "text": "It ensures that attacks against one organization are mitigated across the entire community",
+                                    "answer_start": 291
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "SentinelOne, a leader in cybersecurity, uses AI and machine learning to detect and protect against known and novel cyber threats, offering autonomous responses to attacks. At its annual OneCon cybersecurity conference, the company introduced new products and outlined its vision for the Autonomous SOC, aiming to redefine how security teams respond to threats. SentinelOneâ€™s platform leverages technologies like the Singularity AI SIEM, powered by the Singularity Data Lake, which enables real-time detection, investigation, and response capabilities across vast amounts of data. This eliminates the need for complex data storage management and integrates seamlessly with various security tools using the Open Cybersecurity Schema Framework (OCSF).",
+                    "qas": [
+                        {
+                            "id": "274",
+                            "question": "What technologies does SentinelOne use to detect and protect against cyber threats?",
+                            "answers": [
+                                {
+                                    "text": "AI and machine learning",
+                                    "answer_start": 48
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "275",
+                            "question": "What was introduced at SentinelOneâ€™s annual OneCon conference?",
+                            "answers": [
+                                {
+                                    "text": "New products and the vision for the Autonomous SOC",
+                                    "answer_start": 139
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "276",
+                            "question": "How does the Singularity AI SIEM help SentinelOne's platform?",
+                            "answers": [
+                                {
+                                    "text": "It enables real-time detection, investigation, and response across vast data",
+                                    "answer_start": 510
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "277",
+                            "question": "What is the Open Cybersecurity Schema Framework (OCSF) used for?",
+                            "answers": [
+                                {
+                                    "text": "It integrates SentinelOne's platform with various security tools",
+                                    "answer_start": 0
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                },
+                {
+                    "context": "The company also announced innovations like Singularity Hyperautomation, a no-code automation solution designed to streamline SOC workflows and reduce response times, particularly for complex threats such as ransomware. This solution integrates into the security analyst workflow, automatically generating playbooks based on peer-driven insights, making responses faster and more efficient. Another notable development is the Purple AI-powered Alert AutoTriage feature, which uses AI to assess and prioritize alerts, helping teams focus on real threats and reduce alert fatigue.",
+                    "qas": [
+                        {
+                            "id": "278",
+                            "question": "What is Singularity Hyperautomation designed to do?",
+                            "answers": [
+                                {
+                                    "text": "Streamline SOC workflows and reduce response times for complex threats",
+                                    "answer_start": 115
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "279",
+                            "question": "How does Singularity Hyperautomation improve response times?",
+                            "answers": [
+                                {
+                                    "text": "By automatically generating playbooks based on peer-driven insights",
+                                    "answer_start": 281
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "280",
+                            "question": "What is the purpose of the Purple AI-powered Alert AutoTriage feature?",
+                            "answers": [
+                                {
+                                    "text": "To assess and prioritize alerts using AI",
+                                    "answer_start": 444
+                                }
+                            ],
+                            "is_impossible": true
+                        },
+                        {
+                            "id": "281",
+                            "question": "How does the Alert AutoTriage feature help security teams?",
+                            "answers": [
+                                {
+                                    "text": "It helps teams focus on real threats and reduces alert fatigue",
+                                    "answer_start": 8
+                                }
+                            ],
+                            "is_impossible": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

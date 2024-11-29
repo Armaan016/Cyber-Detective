@@ -28,6 +28,12 @@ const Sidebar = () => {
                             <Link className="nav-link" to='/tokens' style={{ borderBottom: '1px solid white' }}>
                                 Annotate Text from Website
                             </Link>
+                            <Link className="nav-link" to='/generate' style={{ borderBottom: '1px solid white' }}>
+                                Scrape website and Generate Q&A
+                            </Link>
+                            <Link className="nav-link" to='/qa' style={{ borderBottom: '1px solid white' }}>
+                                Ask Questions on CyberSecurity
+                            </Link>
                             <Link className="nav-link" to='/'>
                                 LOG OUT
                             </Link>
