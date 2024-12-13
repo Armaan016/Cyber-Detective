@@ -51,7 +51,7 @@ const scrapeWebsite = async (url) => {
         await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 0 });
 
         const pageText = await page.evaluate(() => {
-            const unwantedSelectors = ['header', 'footer', 'nav', '.navbar', '.footer', '.contact', '.about', '.newsletter']; 
+            const unwantedSelectors = ['header', 'footer', 'nav', '.navbar', '.footer', '.contact', '.about', '.newsletter'];
             unwantedSelectors.forEach(selector => {
                 const elements = document.querySelectorAll(selector);
                 elements.forEach(el => el.remove());
@@ -209,9 +209,9 @@ app.post('/generate', async (req, res) => {
             url: url
         });
 
-        if (response.status === 200) { 
+        if (response.status === 200) {
             res.json(response.data);
-            console.log('QA generated:', response.data); 
+            console.log('QA generated:', response.data);
         } else {
             res.status(response.status).json({ error: response.data.error });
         }
@@ -244,6 +244,17 @@ app.post('/qa', async (req, res) => {
     } catch (error) {
         console.error('Error answering question:', error);
         res.status(500).json({ error: 'Failed to answer question' });
+    }
+});
+
+app.get("/dataset", async (req, res) => {
+    try {
+        const response = await axios.get(`http://${process.env.PYTHON_URI}/dataset`);
+        console.log("Data fetched from Python service: ", response.data);
+        res.status(200).json(response.data);
+    } catch (error) {
+        console.error("Error fetching data from Flask:", error.message);
+        res.status(500).json({ error: error.message });
     }
 });
 

@@ -34,6 +34,9 @@ const Sidebar = () => {
                             <Link className="nav-link" to='/qa' style={{ borderBottom: '1px solid white' }}>
                                 Ask Questions on CyberSecurity
                             </Link>
+                            <Link className="nav-link" to='/dataset' style={{ borderBottom: '1px solid white' }}>
+                                View Dataset
+                            </Link>
                             <Link className="nav-link" to='/'>
                                 LOG OUT
                             </Link>

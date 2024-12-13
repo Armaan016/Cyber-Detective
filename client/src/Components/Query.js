@@ -38,20 +38,20 @@ const Query = () => {
 
     return (
         <>
+            <ToastContainer position="top-center"
+                autoClose={1500}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme='light'
+                toastStyle={{ fontSize: '16px' }}
+                bodyClassName="custom-toast-body"
+                progressBarStyle={{ background: 'white' }} />
             <div className='auth-form-container'>
-                <ToastContainer position="top-center"
-                    autoClose={1500}
-                    hideProgressBar={false}
-                    newestOnTop={false}
-                    closeOnClick
-                    rtl={false}
-                    pauseOnFocusLoss
-                    draggable
-                    pauseOnHover
-                    theme='light'
-                    toastStyle={{ fontSize: '16px' }}
-                    bodyClassName="custom-toast-body"
-                    progressBarStyle={{ background: 'white' }} />
                 <form className='auth-form' style={{ maxWidth: '500px' }}>
                     <h2 style={{ fontSize: '29px' }}>Ask a Question</h2>
                     <input

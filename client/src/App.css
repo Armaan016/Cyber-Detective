@@ -5,19 +5,50 @@
     font-family: "SUSE", sans-serif;
 }
 
-.App {
-    background-image: url("../src/Components/Images/wallhaven-1.jpg");
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../src/Components/Images/wallhaven-1.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
-    min-height: 100vh;
+    background-repeat: no-repeat;
+    filter: none;
 }
+
 
 .auth-form-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.auth-form-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: "Fascinate Inline", sans-serif;
+    color: #f2f2f2;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.auth-form-container button {
+    padding: 10px 20px;
+    background-color: gray;
+    color: white;
+    font-size: 1.2rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.auth-form-container button:hover {
+    background-color: #31475a;
+    transform: scale(1.05);
 }
 
 .auth-form {
@@ -97,27 +128,9 @@
     border: 2px solid white;
     padding: 10px;
     border-radius: 5px;
-    background-color: green;
+    background-color: grey;
     /* word-break: break-all; */
     word-wrap: break-word;
-}
-
-.navbar {
-    /* background-color: gray; */
-    /* Light background */
-    border-color: #ddd;
-    /* Light border color */
-}
-
-.navbar-nav .nav-link {
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    transition: color 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #007bff;
 }
 
 .navbar-brand {
@@ -126,31 +139,119 @@
 }
 
 @media (max-width: 768px) {
-    .navbar-nav {
+    /* .navbar-nav {
         text-align: center;
         margin-top: 10px;
-    }
+    } */
 }
 
-.heading {
-    position: absolute;
-    top: 48%;
-    left: 10%;
-    color: white;
-    font-size: 75px;
-    font-family: "Fascinate Inline", system-ui;
-    font-weight: 400;
-    font-style: normal;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
     color: white;
 }
 
-.tagline {
-    /* fontSize: '25px', top: '47%', left: '24%' */
-    position: absolute;
-    top: 62%;
-    left: 28%;
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px 50px;
+    /* position: fixed; */
+    /* display: flex;
+    flex-direction: column; */
+    top: 10px;
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 20px;
+    z-index: 1000;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    /* padding: 10px;
+    margin: 10px; */
+}
+
+.navbar-nav li {
+    list-style: none;
+}
+
+.navbar-nav a {
+    text-decoration: none;
     color: white;
-    font-size: 25px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar-nav a:hover {
+    color: #007bff;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 30px 10px;
+    /* margin-top: 2px; */
+}
+
+.hero-section h1 {
+    font-size: 60px;
+    font-family: "Fascinate Inline", sans-serif;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 30px;
+    color: #ddd;
+}
+
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.intro-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.intro-box.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.intro-box img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.intro-box img:hover {
+    transform: scale(1.1);
+    /* Slight zoom effect */
+    transition: transform 0.3s ease;
+}
+
+.intro-box h3 {
+    font-size: 1.5rem;
     color: white;
 }
 
@@ -165,51 +266,78 @@
 }
 
 .tokens-table {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* width: 700px; */
-    margin-top: 50px;
-    padding: 0 50px;
-    font-family: Arial, sans-serif;
-}
-
-.tokens-table h3 {
-    text-align: center;
-    color: white;
-    text-decoration: underline;
-}
-
-.tokens-table table {
-    width: 60%;
-    border-collapse: collapse;
-    font-size: 20px;
     margin-top: 20px;
-}
-
-.tokens-table th,
-.tokens-table td {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .tokens-table th {
-    background-color: #f2f2f2;
-    color: #333;
-}
-
-.tokens-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-    color: #31475a;
-}
-
-.tokens-table tr:nth-child(odd) {
-    background-color: #31475a;
+    background-color: #2a3745;
     color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 1.1rem;
+    text-transform: capitalize;
 }
 
-.tokens-table tr:hover {
-    background-color: #f1f1f1;
+.tokens-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    background-color: gray;
+    font-size: 1rem;
+}
+
+.tokens-table tr:nth-child(even) td {
+    background-color: gray;
+}
+
+.tokens-table tr:hover td {
+    background-color: #d4d4d4;
+}
+
+.main__scroll-text {
+    color: white;
+    font-size: 20px;
+    margin-top: 0.5rem;
+}
+
+.main__action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.main__scroll-box {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__action:hover .main__scroll-box {
+    animation: scroll-down 3s infinite;
+}
+
+@keyframes scroll-down {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    35% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+
+    70% {
+        transform: translateY(-1rem);
+        opacity: 0;
+    }
 }

@@ -8,6 +8,7 @@ import Scrape from './Components/Scrape'
 import Tokens from './Components/Tokens'
 import GenerateQA from './Components/GenerateQA'
 import Query from './Components/Query'
+import Dataset from './Components/Dataset'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path='/tokens' element={<Tokens />} />
         <Route path='/generate' element={<GenerateQA />} />
         <Route path='/qa' element={<Query />} />
+        <Route path='/dataset' element={<Dataset />} />
       </Routes>
     </Router >
   )

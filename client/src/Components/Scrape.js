@@ -29,20 +29,20 @@ const ScrapePage = () => {
 
     return (
         <>
+            <ToastContainer position="top-center"
+                autoClose={1500}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme='light'
+                toastStyle={{ fontSize: '16px' }}
+                bodyClassName="custom-toast-body"
+                progressBarStyle={{ background: 'white' }} />
             <div className='auth-form-container'>
-                <ToastContainer position="top-center"
-                    autoClose={1500}
-                    hideProgressBar={false}
-                    newestOnTop={false}
-                    closeOnClick
-                    rtl={false}
-                    pauseOnFocusLoss
-                    draggable
-                    pauseOnHover
-                    theme='light'
-                    toastStyle={{ fontSize: '16px' }}
-                    bodyClassName="custom-toast-body"
-                    progressBarStyle={{ background: 'white' }} />
                 <form className='auth-form' style={{ maxWidth: '500px' }}>
                     <h2 style={{ fontSize: '30px' }}>Scrape any website</h2>
                     <input
@@ -55,10 +55,10 @@ const ScrapePage = () => {
                     <button onClick={handleScrape} style={{ fontSize: '16px' }}>Scrape Website</button>
                 </form>
                 {scrapedText && (
-                    <div className='displayedText'>
+                    <div>
                         <div>
-                            <h3 style={{ textDecoration: 'underline' }}>Scraped Text:</h3>
-                            <pre>{scrapedText}</pre>
+                            {/* <h3 style={{ textDecoration: 'underline' }}>Scraped Text:</h3> */}
+                            <pre className='llm-response'>{scrapedText}</pre>
                         </div>
                     </div>
                 )}

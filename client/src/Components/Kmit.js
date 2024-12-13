@@ -13,14 +13,12 @@ const Kmit = () => {
             setAnswer("");
         }
         if (!query) {
-            // alert("Please enter a query");
             toast.error("Please enter a query");
             return;
         }
 
         try {
             console.log("Query: ", query);
-            // alert("Querying LLM. Please wait...");
             toast.info("Querying LLM. Please wait...");
             const response = await Axios.post("http://localhost:8082/query", { query });
             console.log(response);
@@ -38,20 +36,20 @@ const Kmit = () => {
     }
     return (
         <>
+            <ToastContainer position="top-center"
+                autoClose={2000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme='light'
+                toastStyle={{ fontSize: '16px' }}
+                bodyClassName="custom-toast-body"
+                progressBarStyle={{ background: 'white' }} />
             <div className='auth-form-container'>
-                <ToastContainer position="top-center"
-                    autoClose={2000}
-                    hideProgressBar={false}
-                    newestOnTop={false}
-                    closeOnClick
-                    rtl={false}
-                    pauseOnFocusLoss
-                    draggable
-                    pauseOnHover
-                    theme='light'
-                    toastStyle={{ fontSize: '16px' }}
-                    bodyClassName="custom-toast-body"
-                    progressBarStyle={{ background: 'white' }} />
                 <form className="auth-form" style={{ maxWidth: '600px' }} onSubmit={handleSubmit}>
                     <h2 style={{ fontSize: '29px' }}>Ask any query related to KMIT</h2>
                     <input type="text" placeholder='Enter a query for LLM' onChange={(e) => { setQuery(e.target.value) }} style={{ width: '500px' }} />

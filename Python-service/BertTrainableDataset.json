@@ -7,17 +7,6 @@
                     "context": "AI has been transforming cybersecurity since 2012, initially through behavioral analytics to detect anomalies like unusual logins or data transfers. Over time, its role expanded to advanced machine learning and deep learning, enabling predictive threat detection and automated defense mechanisms. Today, over 80% of cybersecurity vendors incorporate AI, leveraging tools like generative AI to stay ahead of an ever-evolving threat landscape.",
                     "qas": [
                         {
-                            "id": "0",
-                            "question": "When did AI begin transforming cybersecurity?",
-                            "answers": [
-                                {
-                                    "text": "",
-                                    "answer_start": 0
-                                }
-                            ],
-                            "is_impossible": true
-                        },
-                        {
                             "id": "1",
                             "question": "What was the initial role of AI in cybersecurity?",
                             "answers": [

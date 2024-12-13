@@ -52,7 +52,7 @@ const Login = () => {
         }
     }
     return (
-        <div className='auth-form-container'>
+        <>
             <ToastContainer position="top-center"
                 autoClose={1300}
                 hideProgressBar={false}
@@ -66,26 +66,28 @@ const Login = () => {
                 toastStyle={{ fontSize: '16px' }}
                 bodyClassName="custom-toast-body"
                 progressBarStyle={{ background: 'white' }} />
-            <form className="auth-form" onSubmit={handleSubmit}>
-                <h2>Login</h2>
-                <input
-                    type="text"
-                    placeholder="Username"
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
-                />
-                <input
-                    type="password"
-                    placeholder="Password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                />
-                <button type="submit">Login</button>
-                <Link to='/register' className="navigation-link">
-                    <p>Don't have an account? Register</p>
-                </Link>
-            </form>
-        </div>
+            <div className='auth-form-container'>
+                <form className="auth-form" onSubmit={handleSubmit}>
+                    <h2>Login</h2>
+                    <input
+                        type="text"
+                        placeholder="Username"
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                    />
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
+                    <button type="submit">Login</button>
+                    <Link to='/register' className="navigation-link">
+                        <p>Don't have an account? Register</p>
+                    </Link>
+                </form>
+            </div>
+        </>
     )
 }
 

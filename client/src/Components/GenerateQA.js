@@ -9,7 +9,7 @@ const ScrapePage = () => {
     const [scrapedText, setScrapedText] = useState('');
     const [qaContent, setQaContent] = useState('');
 
-    const handleScrape = async (e) => { 
+    const handleScrape = async (e) => {
         e.preventDefault();
         if (!url) {
             toast.error('URL is a required field!');
@@ -30,20 +30,20 @@ const ScrapePage = () => {
 
     return (
         <>
+            <ToastContainer position="top-center"
+                autoClose={1500}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme='light'
+                toastStyle={{ fontSize: '16px' }}
+                bodyClassName="custom-toast-body"
+                progressBarStyle={{ background: 'white' }} />
             <div className='auth-form-container'>
-                <ToastContainer position="top-center"
-                    autoClose={1500}
-                    hideProgressBar={false}
-                    newestOnTop={false}
-                    closeOnClick
-                    rtl={false}
-                    pauseOnFocusLoss
-                    draggable
-                    pauseOnHover
-                    theme='light'
-                    toastStyle={{ fontSize: '16px' }}
-                    bodyClassName="custom-toast-body"
-                    progressBarStyle={{ background: 'white' }} />
                 <form className='auth-form' style={{ maxWidth: '500px' }}>
                     <h2 style={{ fontSize: '25px' }}>Scrape any website and Generate Q&A</h2>
                     <input

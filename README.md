@@ -95,3 +95,26 @@ Tasks Completed:
 2. Added Q&A generation functionality using `Groq` API for extracted article text. 
 3. Ensured scraped content and generated question-answers are saved in a structured format for better file organization.
 <br>
+
+<br>
+Commit 9: 19th November, 2024
+<br>
+Tasks Completed:
+1. Created a dataset containing scraped text, questions and answers from 35 URLs related to cyber-security.
+<br>
+
+<br>
+Commit 10: 29th November, 2024
+<br>
+Tasks Completed:
+1. Implemented RAG for the previously stored questions & answers. 
+2. Trained and deployed a BERT model for question-answering on hugging-face.
+<br>
+
+<br>
+Commit 11: 13th December, 2024
+<br>
+Tasks Completed:
+1. Added a View Component page in frontend, which displays few rows of the dataset.
+2. Made improvements to User Interface.
+<br>

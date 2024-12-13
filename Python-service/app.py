@@ -6,6 +6,7 @@ from collections import Counter
 from flask import Flask, request, jsonify
 from flask_cors import CORS     
 from transformers import pipeline
+import pandas as pd
 
 from RAG import scrape_kmit, scrape_kmit_aboutus, scrape_kmit_management, scrape_kmit_principal_academic_director, scrape_kmit_placements, get_relevant_contexts
 from NLPScraping import process_url
@@ -126,6 +127,16 @@ def qa():
         result = model(question=question, context=context)
         
         return jsonify({"answer" : result['answer']})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+    
+@app.route('/dataset', methods=['GET'])
+def get_data():
+    try:
+        print("Getting data")
+        df = pd.read_csv('./BertTrainableDataset.csv')
+        data = df.head(10).to_dict(orient='records')
+        return jsonify(data), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 

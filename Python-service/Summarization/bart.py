@@ -1,6 +1,6 @@
 from transformers import BartForConditionalGeneration, BartTokenizer
 
-model_path = r"C:\Users\raufu\Downloads\fine_tuned_bart"
+model_path = r"D:\BART_Finetuned"
 tokenizer = BartTokenizer.from_pretrained(model_path)
 model = BartForConditionalGeneration.from_pretrained(model_path)
 
@@ -47,69 +47,7 @@ def summarize_long_text(text, chunk_size=1024, max_summary_length=200, min_summa
     
     return final_summary
 
-input_text = """In an era of escalating digital threats, cybersecurity compliance goes beyond ticking a legal box – it’s a crucial shield safeguarding assets, reputation, and the very survival of your business
-
-What is the most common pain point facing businesses these days? Is it supply chain fragility? Fierce competition? Tight cashflows? Or is it the rising and relentless tide of cyberattacks?
-
-Evidence and analysts suggest it’s often the latter. As cyberthreats show no signs of slowing down, both small and large organizations increasingly recognize that cybersecurity is no longer optional.
-
-What’s more, governments and regulatory agencies have also caught onto its importance, especially when it concerns organizations that operate in sectors that are critical to a nation’s national infrastructure. The result? An expanding set of compliance requirements that feel daunting but are essential for a country’s smooth operations and public security.
-
-Forms of compliance
-
-For starters, we need to distinguish between two types of compliance – compulsory and voluntary, as each brings its own set of requirements.
-
-Compulsory compliance encompasses regulations enforced by state-level or state-adjacent agencies and targeting companies operating in critical infrastructure sectors, such as healthcare, transport, and energy. For example, a company working with patient data in the US must abide by the Health Insurance Portability and Accountability Act (HIPAA), a federal regulation, to maintain patient data privacy across state lines.
-
-On the other hand, voluntary compliance means that businesses apply for specific certifications and standards that identify them as experts within a particular field or qualify some of their products as fulfilling a standard. For example, a company seeking environmental credibility might apply for ISO 14001 certification that demonstrates its commitment to environment-friendly practices.
-
-However, every company needs to recognize that compliance isn’t a one-time effort. Every standard, or another “bit of compliance”, requires additional resources since these processes require consistent monitoring and budget allocations (even ISO certifications require regular re-certification).
-
-Cybersecurity compliance – not only for security vendors
-
-A company that doesn’t conform to compulsory compliance can face hefty fines. Incidents such as data breaches or ransomware attacks can result in extensive costs, but evidence of a failure to comply with mandated security measures can ultimately cause the final bill to go “through the roof”.
-
-The specific cybersecurity regulations an organization needs to abide by depend on the type of industry the company operates in, and how important the security of its internal data is to privacy, data security, or critical infrastructure acts. Do also note that many regulatory acts and certifications are region-specific.
-
-Furthermore, depending on what customers, clients, or partners a business wants to attract, it is wise to apply for a specific certificate to qualify for a contract. For example, if a company wants to work with the US federal government, it needs to apply for the FedRAMP certificate, demonstrating its competence in protecting federal data.
-
-At any rate, compliance needs to be built into the foundations of any business strategy. As regulatory requirements keep rising in the future, well-prepared companies will have an easier time adapting to the changes, With compliance being measured continuously, this can save organizations significant resources and enable their growth in the long run.
-
-Key cybersecurity acts and frameworks
-
-Let’s now have a quick rundown on some of the most important cybersecurity regulatory acts and frameworks:
-
-Health Insurance Portability and Accountability Act (HIPAA)
-
-This regulatory act covers the handling of patient information in hospitals and other healthcare facilities. It represents a set of standards that are designed to protect confidential patient health data from being misused, requiring administrative entities to enact various safeguards to protect said data, both physically and electronically.
-
-National Institute of Standards and Technology (NIST) frameworks
-
-A US government agency under the Department of Commerce, NIST develops standards and guidelines for various sectors, including cybersecurity. By mandating a certain set of policies that serve as the foundation of organizational security, it enables businesses and industries to better manage their cybersecurity. For example, the NIST Cybersecurity Framework 2.0 contains comprehensive guidance for organizations of all sizes and current security posture on how they can manage and reduce their cybersecurity risks.
-
-Payment Card Industry Data Security Standard (PCI DSS)
-
-PCI DSS is another information security standard designed to control credit card data handling. Its goal is to reduce payment fraud risks by tightening the security surrounding cardholder data. It applies to all entities that handle card data, be it a store, a bank, or a service provider.
-
-Network and Information Security Directive (NIS2)
-
-This directive strengthens the cyber-resilience of critical entities in the European Union by imposing stricter security requirements and risk management practices on entities operating in sectors such as energy, transport, health, digital services and managed security services. NIS2 also introduces new incident reporting rules and fines for non-compliance.
-
-General Data Protection Regulation (GDPR)
-
-The GDPR is one of the strictest data privacy and security regulations globally. It focuses on the privacy and data privacy rights of people in the European Union, giving them control over their data and mandating secure storage and breach reporting for companies that manage the data.
-
-There are both industry-specific and broad regulatory frameworks, and each comes with unique requirements. Complying with one doesn’t guarantee that you’re not in breach of another set of rules; therefore, pay attention to which regulations apply to your business and its operations.
-
-Costly non-compliance
-
-What about non-compliance? As mentioned previously, certain regulations institute hefty penalties.
-
-For example, GDPR violations may result in fines of up to 10 million euros, or 2% of global annual turnover, for any company that fails to notify either a supervisory authority or the data subjects of a breach. Supervisory authorities can also slap additional fines for inadequate security measures, leading to further costs.
-
-In the US, non-compliance with FISMA, for example, can mean reduced federal funding, government hearings, censure, lost future contracts, and more. Similarly, HIPAA violations could also have some dire consequences, be they US$1.5 million worth of fines annually and even jail time of 10 years. Clearly, there is more at stake than financial well-being.
-
-All in all, it is better to be safe than sorry, and it’s also prudent to keep up with cybersecurity regulations specific to your industry. Rather than viewing it as an additional avoidable expense, your business should see compliance as an essential and regular investment, doubly so in the case of compulsory standards, which, if neglected, could quickly turn your business, if not life, upside down.
+input_text = """Penetration testing scope is typically targeted and there is always a human factor involved. There is no automated penetration testing which requires the use of tools, sometimes a lot of tools. But it also requires an extremely experienced person to conduct penetration testing. A good penetration tester always at some point during their testing craft a script, change parameters of an attack or tweak settings of the tools he or she may be using. It could be at application or network level but specific to a function, department or number of assets. One can include the whole infrastructure and all applications but that is impractical in the real world because of cost and time. You define your scope on a number of factors that are mainly based on risk and how important is an asset. Some of the penetration tester Spends a lot of money on low risk assets which may take a number of days to exploit is not practical. Penetration testing requires high skilled knowledge and that's why it is costly. Testers often exploit a new vulnerability or discover vulnerabilities that are not known to normal business processes. Penetration testing normally can take from days to a few weeks, it is often conducted once a year and reports are short and to the point. It does have a higher than average chance of causing outages. On the other hand, vulnerability scanning is the act of identifying potential vulnerabilities in network devices such as firewalls, routers, switches, servers and applications. It is automated and focuses on finding potential and know vulnerabilities on the network or an application level. It does not exploit the vulnerabilities. Vulnerability scanners only identify potential vulnerabilities they do not exploit the vulnerabilities. Hence, they are not built to find zero day exploits. The scope of vulnerability scanning is business wide, requiring automated tools to manage a high number of assets. It is wider in scope than penetration testing. Products specific knowledge is needed to effectively use the vulnerability scans product. It is usually run by administrators or security personnel with good networking knowledge. Vulnerability scans can be run frequently on any number of assets to ascertain known vulnerabilities are detected and patched. Thus, you can eliminate more serious vulnerabilities for your valuable resources quickly. An effective way to remediate vulnerabilities is to follow the vulnerability management lifecycle. The cost of a vulnerability scan is low to moderate as compared to penetration testing, and it is a detective control as opposed to preventive like penetration testing. Vulnerability management can be fed into patch management for effective patching. Patches must be tested on a test system before rolling out to production. Businesses must manually check each vulnerability before testing again Does not confirm that a vulnerability is exploitable See Also Picking Your Vulnerability Scanner The Questions You Should Ask Both tests work together to encourage optimal network and application security. Vulnerability scans are great weekly, monthly, or quarterly insight into your network security the quick Xray, while penetration tests are a very thorough way to deeply examine your network security the periodic detailed MRI. Yes, penetration tests are expensive, but you are paying a professional to examine every nook and cranny of your business the way a real world attacker would, to find a possibility of compromise. Originally published at httpscybrsecurty.blogspot.com.
 """  
 
 print("Input Text Length:", len(input_text))

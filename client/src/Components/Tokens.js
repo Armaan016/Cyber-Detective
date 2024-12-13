@@ -33,22 +33,22 @@ const Tokens = () => {
 
     return (
         <>
+            <ToastContainer position="top-center"
+                autoClose={1500}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme='light'
+                toastStyle={{ fontSize: '16px' }}
+                bodyClassName="custom-toast-body"
+                progressBarStyle={{ background: 'white' }} />
             <div className='auth-form-container'>
-                <ToastContainer position="top-center"
-                    autoClose={1500}
-                    hideProgressBar={false}
-                    newestOnTop={false}
-                    closeOnClick
-                    rtl={false}
-                    pauseOnFocusLoss
-                    draggable
-                    pauseOnHover
-                    theme='light'
-                    toastStyle={{ fontSize: '16px' }}
-                    bodyClassName="custom-toast-body"
-                    progressBarStyle={{ background: 'white' }} />
                 <form className='auth-form' style={{ maxWidth: '500px' }}>
-                    <h2 style={{ fontSize: '29px' }}>Annotate Tokens from Website</h2>
+                    <h2 style={{ fontSize: '29px' }}>Annotate Text from Website</h2>
                     <input
                         type="text"
                         placeholder="Enter URL"
@@ -61,9 +61,9 @@ const Tokens = () => {
             </div>
 
             {tokens.length > 0 && (
-                <div className='tokens-table' style={{ marginTop: '50px', padding: '0 50px' }}>
+                <div className='auth-form-container'>
                     <h3>Scraped Words and Tags</h3>
-                    <table border="1" cellPadding="10" s>
+                    <table className='tokens-table'>
                         <thead>
                             <tr>
                                 <th>Word</th>

@@ -99,7 +99,7 @@ const Register = () => {
     };
 
     return (
-        <div className="auth-form-container">
+        <>
             <ToastContainer position="top-center"
                 autoClose={1000}
                 hideProgressBar={false}
@@ -113,56 +113,58 @@ const Register = () => {
                 toastStyle={{ fontSize: '16px' }}
                 bodyClassName="custom-toast-body"
                 progressBarStyle={{ background: 'white' }} />
-            <form className="auth-form" onSubmit={handleSubmit}>
-                <h2>Register</h2>
-                <input
-                    type="text"
-                    placeholder="Name"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                />
-                <input
-                    type="email"
-                    placeholder="Email"
-                    value={email}
-                    ref={rec_email}
-                    onChange={(e) => setEmail(e.target.value)}
-                />
-                <p style={{ fontSize: '16px', margin: '8px 0', color: 'white' }}>(An OTP will be sent to your email for verification)</p>
-                <input
-                    type="text"
-                    placeholder="Username"
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
-                />
-                <input
-                    type="password"
-                    placeholder="Password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                /> 
-                {!isOtpSent && (
-                    <button type="button" onClick={sendEmailOTP}>Send OTP</button>
-                )}
-                <Link to='/' className="navigation-link">
-                    <p>Already a user? Login</p>
-                </Link>
-                {isOtpSent && !isOtpVerified && (
-                    <>
-                        <input
-                            type="text"
-                            placeholder="Enter OTP"
-                            value={userEnteredOtp}
-                            onChange={(e) => setUserEnteredOtp(e.target.value)}
-                        />
-                        <button type="button" onClick={verifyEmailOTP}>Verify OTP</button>
-                    </>
-                )}
-                {isOtpVerified && (
-                    <button type="submit">Register</button>
-                )}
-            </form>
-        </div>
+            <div className="auth-form-container">
+                <form className="auth-form" onSubmit={handleSubmit}>
+                    <h2>Register</h2>
+                    <input
+                        type="text"
+                        placeholder="Name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                    />
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        value={email}
+                        ref={rec_email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                    <p style={{ fontSize: '16px', margin: '8px 0', color: 'white' }}>(An OTP will be sent to your email for verification)</p>
+                    <input
+                        type="text"
+                        placeholder="Username"
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                    />
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
+                    {!isOtpSent && (
+                        <button type="button" onClick={sendEmailOTP}>Send OTP</button>
+                    )}
+                    <Link to='/' className="navigation-link">
+                        <p>Already a user? Login</p>
+                    </Link>
+                    {isOtpSent && !isOtpVerified && (
+                        <>
+                            <input
+                                type="text"
+                                placeholder="Enter OTP"
+                                value={userEnteredOtp}
+                                onChange={(e) => setUserEnteredOtp(e.target.value)}
+                            />
+                            <button type="button" onClick={verifyEmailOTP}>Verify OTP</button>
+                        </>
+                    )}
+                    {isOtpVerified && (
+                        <button type="submit">Register</button>
+                    )}
+                </form>
+            </div>
+        </>
     )
 }
 
