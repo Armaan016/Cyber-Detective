@@ -19,7 +19,7 @@ class MyHTMLParser(HTMLParser):
         if self.in_paragraph:
             self.paragraphs.append(data.strip())
             
-url = 'https://www.kmit.in'
+url = 'https://www.cisco.com/site/us/en/learn/topics/security/what-is-cybersecurity.html#:~:text=Cybersecurity%20is%20the%20practice%20of,or%20interrupting%20normal%20business%20processes'
 
 response = urlopen(url)
 html_content = response.read().decode('utf-8')

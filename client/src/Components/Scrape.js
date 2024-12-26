@@ -59,7 +59,7 @@ const ScrapePage = () => {
                     <div>
                         <div>
                             {/* <h3 style={{ textDecoration: 'underline' }}>Scraped Text:</h3> */}
-                            <pre className='llm-response'>{scrapedText}</pre>
+                            <p className='llm-response'>{scrapedText}</p>
                         </div>
                     </div>
                 )}

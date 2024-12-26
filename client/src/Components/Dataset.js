@@ -7,6 +7,7 @@ import Sidebar from "./Sidebar";
 const ViewDatabase = () => {
     const [data, setData] = useState([]);
     const backendUrl = process.env.REACT_APP_BACKEND_URI || 'localhost';
+    const flaskUrl = process.env.REACT_APP_PYTHON_URI || 'localhost';
 
     const fetchData = async () => {
         try {
@@ -17,6 +18,15 @@ const ViewDatabase = () => {
         } catch (err) {
             toast.error("Failed to fetch data");
         }
+    };
+
+    const downloadDataset = () => {
+        console.log("flaskUrl", flaskUrl);
+        const url = `http://${flaskUrl}/download-dataset`;
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'CyberDetectiveDataset.csv';
+        link.click();
     };
 
     const columnOrder = ["context", "question", "answer"];
@@ -42,24 +52,29 @@ const ViewDatabase = () => {
                     Load Data
                 </button>
                 {data.length > 0 && (
-                    <table className="tokens-table">
-                        <thead>
-                            <tr>
-                                {columnOrder.map((key) => (
-                                    <th key={key}>{key}</th>
-                                ))}
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {data.map((row, index) => (
-                                <tr key={index}>
+                    <>
+                        <button onClick={downloadDataset} style={{ position: 'absolute', left: '72%', top: '20px', marginBottom: "10px", marginLeft: "10px" }}>
+                            Download Dataset
+                        </button>
+                        <table className="tokens-table">
+                            <thead>
+                                <tr>
                                     {columnOrder.map((key) => (
-                                        <td key={key}>{row[key]}</td>
+                                        <th key={key}>{key}</th>
                                     ))}
                                 </tr>
-                            ))}
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody>
+                                {data.map((row, index) => (
+                                    <tr key={index}>
+                                        {columnOrder.map((key) => (
+                                            <td key={key}>{row[key]}</td>
+                                        ))}
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </>
                 )}
                 <Sidebar />
             </div>

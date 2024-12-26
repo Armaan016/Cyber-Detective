@@ -7,6 +7,8 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS     
 from transformers import pipeline
 import pandas as pd
+from urllib.request import urlopen
+from html.parser import HTMLParser
 
 from RAG import scrape_kmit, scrape_kmit_aboutus, scrape_kmit_management, scrape_kmit_principal_academic_director, scrape_kmit_placements, get_relevant_contexts
 from NLPScraping import process_url
@@ -137,6 +139,48 @@ def get_data():
         df = pd.read_csv('./BertTrainableDataset.csv')
         data = df.head(10).to_dict(orient='records')
         return jsonify(data), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+    
+from flask import send_file
+
+@app.route('/download-dataset', methods=['GET'])
+def download_dataset():
+    try:
+        file_path = './BertTrainableDataset.csv'
+        return send_file(file_path, as_attachment=True, download_name='CyberDetectiveDataset.csv')
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+    
+class MyHTMLParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.in_paragraph = False
+        self.paragraphs = []
+        
+    def handle_starttag(self, tag, attrs):
+        if tag == 'p':
+            self.in_paragraph = True
+            
+    def handle_endtag(self, tag):
+        if tag == 'p':
+            self.in_paragraph = False
+            
+    def handle_data(self, data):
+        if self.in_paragraph:
+            self.paragraphs.append(data.strip())    
+    
+@app.route('/parse', methods=['POST'])
+def parse():
+    try:
+        data = request.get_json()
+        print(data)
+        url = data.get('url', '').strip()
+        response = urlopen(url)
+        html_content = response.read().decode('utf-8')
+        parser = MyHTMLParser()
+        parser.feed(html_content)
+        return jsonify(parser.paragraphs)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 

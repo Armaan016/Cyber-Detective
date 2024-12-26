@@ -119,9 +119,9 @@ app.post('/scrape', async (req, res) => {
     }
 
     try {
-        const scrapedText = await scrapeWebsite(url);
+        const scrapedText = await axios.post(`http://${process.env.PYTHON_URI}/parse`, { url });
         console.log("Scraping complete");
-        res.json({ text: scrapedText });
+        res.json({ text: scrapedText.data });
     } catch (error) {
         res.status(500).json({ error: 'Failed to scrape the website' });
     }
