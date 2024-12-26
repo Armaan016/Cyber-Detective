@@ -10,7 +10,7 @@ import dataset_image from './Images/dataset.webp';
 const Home = () => {
     useEffect(() => {
         const handleScroll = () => {
-            const introBoxes = document.querySelectorAll('.intro-box');
+            const introBoxes = document.querySelectorAll('.image-description-box');
             introBoxes.forEach((box) => {
                 const rect = box.getBoundingClientRect();
                 if (rect.top < window.innerHeight) {
@@ -42,9 +42,9 @@ const Home = () => {
             <header className="hero-section">
                 <h1>Welcome to CyberDetective</h1>
                 <p>Your One-Stop Solution for Cybersecurity Queries and Advice</p>
+                <p style={{ color: 'antiquewhite' }}>Welcome to CyberDetective! Your all-in-one platform for exploring cybersecurity tools and solutions. From answering queries to web scraping, text annotation, and Q&A generation, we've got you covered. Dive into datasets, ask questions, and unleash powerful insights for your projects. Scroll down for more information!</p>
             </header>
 
-            {/* Scroll Down Arrow */}
             <div className="main__action">
                 <a className="main__scroll" href="#intro">
                     <div className="main__scroll-box" style={{ backgroundColor: 'white' }}>
@@ -57,43 +57,66 @@ const Home = () => {
                 <span className="main__scroll-text" style={{ left: '100px' }}>Scroll</span>
             </div>
 
-            <section id="intro" className="intro-section">
-                <div className="intro-box">
-                    <Link to='/kmit'>
-                        <img src={kmit_image} alt="Component 1" />
-                        <h3>KMIT Queries</h3>
-                    </Link>
-                </div>
-                <div className="intro-box">
-                    <Link to='/scrape'>
-                        <img src={website_image} alt="Component 2" />
-                        <h3>Scrape any Website</h3>
-                    </Link>
-                </div>
-                <div className="intro-box">
-                    <Link to='/tokens'>
-                        <img src={annotations_image} alt="Component 3" />
-                        <h3>Annotate Text</h3>
-                    </Link>
-                </div>
-                <div className="intro-box">
-                    <Link to='/generate'>
-                        <img src={data_image} alt="Component 4" />
-                        <h3>Generate Q&A</h3>
-                    </Link>
-                </div>
-                <div className="intro-box">
-                    <Link to='/qa'>
-                        <img src={questions_image} alt="Component 5" />
-                        <h3>Ask Questions</h3>
-                    </Link>
-                </div>
-                <div className="intro-box">
-                    <Link to='/dataset'>
-                        <img src={dataset_image} alt="Component 5" />
-                        <h3>View Dataset</h3>
-                    </Link>
-                </div>
+            <section className="image-description-section">
+                <Link to='/kmit' style={{ textDecoration: 'none' }}>
+                    <div className="image-description-box">
+                        <img src={kmit_image} alt="KMIT Queries" />
+                        <div className="image-description-text">
+                            <h3>KMIT Queries</h3>
+                            <p>Access this feature to ask any query related to KMIT. It utilizes Retrieval-Augmented Generation (RAG) techniques after scraping the official KMIT website. The scraping process employs BeautifulSoup for parsing the HTML content, while the msmarco sentence transformer encodes the data to provide relevant answers. The RAG architecture seamlessly integrates the scraped data with a question-answering system to deliver precise and contextual responses to your queries.</p>
+                        </div>
+                    </div>
+                </Link>
+
+                <Link to='/scrape' style={{ textDecoration: 'none' }}>
+                    <div className="image-description-box">
+                        <img src={website_image} alt="Scrape Websites" />
+                        <div className="image-description-text">
+                            <h3>Scrape Websites</h3>
+                            <p>Use this tool to extract data from any URL effortlessly. By entering a website link, the page is parsed using standard HTML parsing techniques, bypassing the need for third-party libraries. This lightweight and efficient scraper is perfect for quick data collection and allows you to retrieve web content with minimal setup, focusing solely on built-in functionality for simplicity and reliability.</p>
+                        </div>
+                    </div>
+                </Link>
+
+                <Link to='/tokens' style={{ textDecoration: 'none' }}>
+                    <div className="image-description-box">
+                        <img src={annotations_image} alt="Text Annotation" />
+                        <div className="image-description-text">
+                            <h3>Annotate Text</h3>
+                            <p>This feature lets you annotate text intelligently. Enter a URL, and the web page is first scraped using Puppeteer for advanced scraping. The extracted content is then passed to a random forest model, which tags each word based on its context. This process enhances understanding and categorization, making it ideal for labeling textual data in research or machine learning projects.</p>
+                        </div>
+                    </div>
+                </Link>
+
+                <Link to='/generate' style={{ textDecoration: 'none' }}>
+                    <div className="image-description-box">
+                        <img src={data_image} alt="Generate Q&A" />
+                        <div className="image-description-text">
+                            <h3>Generate Q&A</h3>
+                            <p>Generate questions and answers from any website with this feature. By entering a URL, the page is scraped using newspaper3k, and the content is forwarded to the Groq API, which generates question-answer pairs. This tool is highly effective for educators, researchers, or anyone needing automated Q&A sets for training or academic purposes.</p>
+                        </div>
+                    </div>
+                </Link>
+
+                <Link to='/qa' style={{ textDecoration: 'none' }}>
+                    <div className="image-description-box">
+                        <img src={questions_image} alt="Ask Questions" />
+                        <div className="image-description-text">
+                            <h3>Ask Questions</h3>
+                            <p>Pose queries related to cybersecurity, and this feature provides accurate responses powered by a fine-tuned BERT model. Whether it’s basic concepts or in-depth cybersecurity challenges, the system leverages its trained model to offer relevant, reliable, and context-aware answers in seconds, ensuring your queries are resolved efficiently.</p>
+                        </div>
+                    </div>
+                </Link>
+
+                <Link to='/dataset' style={{ textDecoration: 'none' }}>
+                    <div className="image-description-box">
+                        <img src={dataset_image} alt="View Dataset" />
+                        <div className="image-description-text">
+                            <h3>View Dataset</h3>
+                            <p>Explore a meticulously crafted dataset that combines context, generated questions, and their corresponding answers. This resource is a result of extensive research and data generation, designed to assist with various projects, experiments, or training models. It provides reliable and structured information to boost your productivity and insight into data science tasks.</p>
+                        </div>
+                    </div>
+                </Link>
             </section>
         </div>
     );

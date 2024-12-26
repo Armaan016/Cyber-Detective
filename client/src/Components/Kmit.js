@@ -7,6 +7,8 @@ import Sidebar from './Sidebar';
 const Kmit = () => {
     const [query, setQuery] = useState("");
     const [answer, setAnswer] = useState("");
+
+    const backendUrl = process.env.REACT_APP_BACKEND_URI || 'localhost';
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (answer) {
@@ -20,7 +22,7 @@ const Kmit = () => {
         try {
             console.log("Query: ", query);
             toast.info("Querying LLM. Please wait...");
-            const response = await Axios.post("http://localhost:8082/query", { query });
+            const response = await Axios.post(`http://${backendUrl}:8082/query`, { query });
             console.log(response);
             if (response.status === 200) {
                 console.log(response.data);

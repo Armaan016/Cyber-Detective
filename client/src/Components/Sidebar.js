@@ -20,24 +20,24 @@ const Sidebar = () => {
                                 Home
                             </Link>
                             <Link className="nav-link" to='/kmit' style={{ borderBottom: '1px solid white' }}>
-                                KMIT Queries
+                                Ask KMIT Queries
                             </Link>
                             <Link className="nav-link" to='/scrape' style={{ borderBottom: '1px solid white' }}>
                                 Scrape any Website
                             </Link>
                             <Link className="nav-link" to='/tokens' style={{ borderBottom: '1px solid white' }}>
-                                Annotate Text from Website
+                                Annotate Text
                             </Link>
                             <Link className="nav-link" to='/generate' style={{ borderBottom: '1px solid white' }}>
-                                Scrape website and Generate Q&A
+                                Generate Q&A
                             </Link>
                             <Link className="nav-link" to='/qa' style={{ borderBottom: '1px solid white' }}>
-                                Ask Questions on CyberSecurity
+                                Ask Questions
                             </Link>
                             <Link className="nav-link" to='/dataset' style={{ borderBottom: '1px solid white' }}>
                                 View Dataset
                             </Link>
-                            <Link className="nav-link" to='/'>
+                            <Link className="nav-link" to='/' style={{ color: 'red' }}>
                                 LOG OUT
                             </Link>
                         </li>

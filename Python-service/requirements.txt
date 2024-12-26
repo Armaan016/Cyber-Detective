@@ -12,3 +12,4 @@ newspaper3k==0.2.8
 groq==0.12.0
 lxml_html_clean
 transformers==4.46.3
+pandas==2.2.3

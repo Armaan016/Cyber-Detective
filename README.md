@@ -4,6 +4,7 @@
 Investigating and attributing cyber-attacks are crucial processes that allow cybersecurity experts to implement efficient countermeasures and pursue legal actions. Cyber-attack attribution helps identify the attackers responsible for cyber-attacks, enabling experts to take attacker-oriented countermeasures.
 
 This project, RAG-Cyber-Detective, aims to develop a web-based Question Answering (QA) model that assists cybersecurity experts in their investigations. The QA model will provide answers to queries based on either a curated knowledge base (KB) or external resources provided by users, utilizing Retrieval-Augmented Generation (RAG) techniques together with a Large Language Model (LLM).
+
 <br>
 
 ## Tech Stack:
@@ -27,6 +28,14 @@ Web-based QA platform for cybersecurity experts
 Hybrid approach: KB + User-provided data for answering queries
 <br>
 Scalable, containerized deployment using Docker and AWS
+<br>
+
+## Installation:
+1. Clone this repository: "git clone https://github.com/your-repo/cyber-detective.git"
+2. Navigate to the directory: "cd cyber-detective"
+3. Install dependencies:  "npm install" (For frontend and backend) "pip install -r requirements.txt" (For Python scripts)
+4. Start Docker containers: "docker-compose up" (Create a docker-compose.yml first)
+
 <br>
 
 ## Progress:
@@ -117,4 +126,11 @@ Commit 11: 13th December, 2024
 Tasks Completed:
 1. Added a View Component page in frontend, which displays few rows of the dataset.
 2. Made improvements to User Interface.
+<br>
+
+<br>
+Commit 12: 26th December, 2024
+<br>
+Tasks Completed:
+1. Made final minor modifications to project.
 <br>

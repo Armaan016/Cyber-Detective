@@ -8,6 +8,8 @@ const Tokens = () => {
     const [url, setUrl] = useState('');
     const [tokens, setTokens] = useState([]);
 
+    const backendUrl = process.env.REACT_APP_BACKEND_URI || 'localhost';
+
     const handleScrape = async (e) => {
         e.preventDefault();
         if (!url) {
@@ -17,7 +19,7 @@ const Tokens = () => {
 
         try {
             toast.info('Annotating website...');
-            const response = await Axios.post('http://localhost:8082/tokens', { url });
+            const response = await Axios.post(`http://${backendUrl}:8082/tokens`, { url });
             if (response.status === 200) {
                 toast.success('Website scraped and tokens annotated successfully!');
                 setUrl('');

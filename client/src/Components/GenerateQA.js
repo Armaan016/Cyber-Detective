@@ -9,6 +9,8 @@ const ScrapePage = () => {
     const [scrapedText, setScrapedText] = useState('');
     const [qaContent, setQaContent] = useState('');
 
+    const backendUrl = process.env.REACT_APP_BACKEND_URI || 'localhost';
+
     const handleScrape = async (e) => {
         e.preventDefault();
         if (!url) {
@@ -18,7 +20,7 @@ const ScrapePage = () => {
 
         try {
             toast.info('Scraping website...');
-            const response = await Axios.post('http://localhost:8082/generate', { url });
+            const response = await Axios.post(`http://${backendUrl}:8082/generate`, { url });
             setScrapedText(response.data.scraped_text);
             setQaContent(response.data.qa_content);
         } catch (err) {

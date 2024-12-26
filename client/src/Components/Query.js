@@ -9,6 +9,8 @@ const Query = () => {
     const [query, setQuery] = useState('');
     const [answer, setAnswer] = useState('');
 
+    const backendUrl = process.env.REACT_APP_BACKEND_URI || 'localhost';
+
     const handleScrape = async (e) => {
         e.preventDefault();
         if (answer) {
@@ -23,7 +25,7 @@ const Query = () => {
         try {
             toast.info('Querying model...');
             console.log(query);
-            const response = await Axios.post('http://localhost:8082/qa', { query });
+            const response = await Axios.post(`http://${backendUrl}:8082/qa`, { query });
             if (response.status === 200) {
                 // toast.success('Website scraped successfully and data saved in MongoDB!');
                 console.log(response.data);

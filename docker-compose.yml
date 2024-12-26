@@ -4,6 +4,7 @@ services:
     build: ./client
     environment:
       - CHOKIDAR_USEPOLLING=true
+      - REACT_APP_BACKEND_URI=localhost
     volumes:
       - /app/node_modules
       - ./client:/app

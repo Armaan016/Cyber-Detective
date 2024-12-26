@@ -6,10 +6,11 @@ import Sidebar from "./Sidebar";
 
 const ViewDatabase = () => {
     const [data, setData] = useState([]);
+    const backendUrl = process.env.REACT_APP_BACKEND_URI || 'localhost';
 
     const fetchData = async () => {
         try {
-            const response = await axios.get("http://localhost:8082/dataset");
+            const response = await axios.get(`http://${backendUrl}:8082/dataset`);
             toast.success("Data Fetched");
             const result = await response.data;
             setData(result);

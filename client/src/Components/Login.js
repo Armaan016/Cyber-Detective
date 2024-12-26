@@ -15,6 +15,8 @@ const Login = () => {
         e.preventDefault();
         console.log(username, password);
 
+        const backendUrl = process.env.REACT_APP_BACKEND_URI || 'localhost';
+        console.log(backendUrl);
         if (!username || !password) {
             // alert("Please fill in all fields");
             toast.error("Please fill in all fields");
@@ -22,7 +24,7 @@ const Login = () => {
         }
 
         try {
-            const response = await Axios.post('http://localhost:8082/login', {
+            const response = await Axios.post(`http://${backendUrl}:8082/login`, {
                 username,
                 password
             });

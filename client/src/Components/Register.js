@@ -17,6 +17,8 @@ const Register = () => {
     const navigate = useNavigate();
     const rec_email = useRef(null);
 
+    const backendUrl = process.env.REACT_APP_BACKEND_URI || 'localhost';
+
     const generateRandomOtp = () => {
         return Math.floor(1000 + Math.random() * 9000);
     };
@@ -69,7 +71,7 @@ const Register = () => {
 
         try {
             console.log("Sending registration request...");
-            const response = await Axios.post("http://localhost:8082/register", {
+            const response = await Axios.post(`http://${backendUrl}:8082/register`, {
                 name,
                 email,
                 username,
