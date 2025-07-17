@@ -31,7 +31,7 @@ Scalable, containerized deployment using Docker and AWS
 <br>
 
 ## Installation:
-1. Clone this repository: "git clone https://github.com/your-repo/cyber-detective.git"
+1. Clone this repository: "git clone https://github.com/Armaan016/cyber-detective.git"
 2. Navigate to the directory: "cd cyber-detective"
 3. Install dependencies:  "npm install" (For frontend and backend) "pip install -r requirements.txt" (For Python scripts)
 4. Start Docker containers: "docker-compose up" (Create a docker-compose.yml first)
